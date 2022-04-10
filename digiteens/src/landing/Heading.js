@@ -49,26 +49,26 @@ const Heading = () => {
   return (
     <Container>
         <div class="random">
-            <span class="nbr ltr text-greenlight3">0</span>
-            <span class="nbr ltr text-greenlight3">0</span>
-            <span class="nbr ltr text-greenlight3">0</span>
-            <span class="nbr ltr text-greenlight3">0</span>
-            <span class="nbr ltr text-greenlight3">0</span>
-            <span class="nbr ltr text-greenlight3">0</span>
-            <span class="nbr ltr text-greenlight3">0</span>
-            <span class="nbr ltr text-greenlight3">0</span>
-            <span class="nbr ltr text-greenlight3">0</span>
-            <span class="nbr ltr text-greenlight3">0</span>
-            <span class="nbr ltr text-greenlight3">0</span>
-            <span class="nbr ltr text-transparent">0</span>
-            <span class="nbr ltr">0</span>
-            <span class="nbr ltr">0</span>
-            <span class="nbr ltr">0</span>
-            <span class="nbr ltr text-transparent">0</span>
-            <span class="nbr ltr">0</span>
-            <span class="nbr ltr">0</span>
-            <span class="nbr ltr">0</span>
-            <span class="nbr ltr">0</span>
+            <span className="nbr ltr text-greenlight3">0</span>
+            <span className="nbr ltr text-greenlight3">0</span>
+            <span className="nbr ltr text-greenlight3">0</span>
+            <span className="nbr ltr text-greenlight3">0</span>
+            <span className="nbr ltr text-greenlight3">0</span>
+            <span className="nbr ltr text-greenlight3">0</span>
+            <span className="nbr ltr text-greenlight3">0</span>
+            <span className="nbr ltr text-greenlight3">0</span>
+            <span className="nbr ltr text-greenlight3">0</span>
+            <span className="nbr ltr text-greenlight3">0</span>
+            <span className="nbr ltr text-greenlight3">0</span>
+            <span className="nbr ltr text-transparent">0</span>
+            <span className="nbr ltr">0</span>
+            <span className="nbr ltr">0</span>
+            <span className="nbr ltr">0</span>
+            <span className="nbr ltr text-transparent">0</span>
+            <span className="nbr ltr">0</span>
+            <span className="nbr ltr">0</span>
+            <span className="nbr ltr">0</span>
+            <span className="nbr ltr">0</span>
         </div>
     </Container>
   )

@@ -3,98 +3,32 @@ import styled from "styled-components"
 import NavBar from '../commons/navbar'
 import Home from '../landing/Home'
 import Timeline from '../landing/Timeline'
-
-const landing = () => {
-  return (
-    <Container>
-        <NavBar/>
-        <Home />
-        <Test />
-        <Test1 />
-        <Test2 />
-        <Test3 />
-        <Test4 />
-        <Test5 />
-        <Footer />
-        <TimelineContainer>
-            <Timeline />
-        </TimelineContainer>
-    </Container>
-  )
-}
+import { useState, useEffect, useRef } from 'react'
+import SectionBar from '../landing/SectionBar'
 
 
 const Container = styled.div`
-    height : 100vh;
-    width : 100vw;
-    overflow-x:hidden;
+    height : 500vh;
+    width : 100%;
+    overflow-x: hidden;
     position: relative;
     background-color : #0A2729;
 `
 
 const Test = styled.div`
-    height : 100vh;
-    width : 100vw;
-    margin-top : 100vh;
-    position: absolute;
-    background-color : #FF0000;
-    opacity:0.5;
 `
 const Test1 = styled.div`
-    height : 100vh;
-    width : 100vw;
-    margin-top : 200vh;
-    position: absolute;
-    background-color : #00FF00;
-    opacity:0.5;
 `
 const Test2 = styled.div`
-    height : 100vh;
-    width : 100vw;
-    margin-top : 300vh;
-    position: absolute;
-    background-color : #FF0000;
-    opacity:0.5;
-`
-const Test3 = styled.div`
-    height : 100vh;
-    width : 100vw;
-    margin-top : 400vh;
-    position: absolute;
-    background-color : #00FF00;
-    opacity:0.5;
-`
-const Test4 = styled.div`
-    height : 100vh;
-    width : 100vw;
-    margin-top : 500vh;
-    position: absolute;
-    background-color : #FF0000;
-    opacity:0.5;
-`
-
-const Test5 = styled.div`
-    height : 100vh;
-    width : 100vw;
-    margin-top : 600vh;
-    position: absolute;
-    background-color : #00FF00;
-    opacity:0.5;
 `
 
 const Footer = styled.div`
-    height : 50vh;
-    width : 100vw;
-    margin-top : 700vh;
-    position: absolute;
-    background-color : #00FF00;
-    opacity:0.5;
 `
 
 const TimelineContainer = styled.div`
     overflow: hidden;
     position : absolute;
-    margin : 14.5rem 0 0 10.5rem;
+    margin : 14.5rem 0 0 6.5rem;
 
     @media(max-width : 1007px){
         display : none;
@@ -102,4 +36,72 @@ const TimelineContainer = styled.div`
     }
 `
 
-export default landing
+const Landing = () => {
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.6,
+    };
+
+    const homeRef = useRef();
+    const testRef = useRef();
+    const test1Ref = useRef();
+    const test2Ref = useRef();
+    const test3Ref = useRef();
+
+    const [whichVisible, setWhichVisible] = useState("home");
+
+    useEffect(() => {
+        const homeObserver = new IntersectionObserver((entries) => {
+            const placeholder = entries[0].isIntersecting ? setWhichVisible("welcome") : "";
+        }, options);
+        const testObserver = new IntersectionObserver((entries) => {
+            const placeholder = entries[0].isIntersecting ? setWhichVisible("about us") : "";
+        }, options);
+        const test1Observer = new IntersectionObserver((entries) => {
+            const placeholder = entries[0].isIntersecting ? setWhichVisible("timeline") : "";
+        }, options);
+        const test2Observer = new IntersectionObserver((entries) => {
+            const placeholder = entries[0].isIntersecting ? setWhichVisible("sponsors") : "";
+        }, options);
+        const test3Observer = new IntersectionObserver((entries) => {
+            const placeholder = entries[0].isIntersecting ? setWhichVisible("join us") : "";
+        }, options);
+
+        homeObserver.observe(homeRef.current);
+        testObserver.observe(testRef.current);
+        test1Observer.observe(test1Ref.current);
+        test2Observer.observe(test2Ref.current);
+        test3Observer.observe(test3Ref.current);
+    }, []);
+
+    return (
+        <Container>
+            <NavBar />
+            <SectionBar current={whichVisible}/>
+            <section ref={homeRef} class="section">
+                <Home />
+            </section>
+            <section ref={testRef} class="section1">
+                <Test />
+            </section>
+            <section ref={test1Ref} class="section2">
+                <Test1 />
+            </section>
+            <section ref={test2Ref} class="section3">
+                <Test2 />
+            </section>
+            <section ref={test3Ref} class="section4">
+                <Footer />
+            </section>
+            <TimelineContainer>
+                <Timeline />
+            </TimelineContainer>
+        </Container>
+    );
+
+}
+
+export default Landing
+
+

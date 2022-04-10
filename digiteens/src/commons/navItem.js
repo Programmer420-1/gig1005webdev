@@ -6,7 +6,7 @@ import { NavLink as Link} from 'react-router-dom'
 const navItem = ({ pageName }) => {
     const route = pageName.toLowerCase()==='home'?'':pageName.toLowerCase();
     return (
-        <NavLink to={"/"+ route} activeStyle>
+        <NavLink to={"/"+ route} activestyle>
             <p>{pageName.toUpperCase()}</p>
         </NavLink>
     )

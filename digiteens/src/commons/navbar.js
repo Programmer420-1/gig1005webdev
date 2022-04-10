@@ -10,9 +10,7 @@ import DropDown from './DropDown'
 const NavBar = () => {
     // track menu is pressed
     const [isOpen, setIsOpen] = useState(false);
-
     
- 
     return (
         <>
         {

@@ -10,6 +10,62 @@ root {
   font-size: 1rem;
 }
 
+.section{
+  height : 100vh;
+  width : 100vw;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.section1{
+  height : 100vh;
+  width : 100vw;
+  overflow-x: hidden;
+  top : 100vh;
+  position: absolute;
+  /* background-color : #00FF00; */
+}
+
+.section2{
+  height : 100vh;
+  width : 100vw;
+  overflow-x: hidden;
+  top : 200vh;
+  position: absolute;
+  /* background-color : #FF0000; */
+}
+
+.section3{
+  height : 100vh;
+  width : 100vw;
+  overflow-x: hidden;
+  top : 300vh;
+  position: absolute;
+  /* background-color : #00FF00; */
+}
+
+.section4{
+  height : 100vh;
+  width : 100vw;
+  overflow-x: hidden;
+  top : 400vh;
+  position: absolute;
+  /* background-color : #FF0000; */
+}
+
+@keyframes float {
+  0% {
+      transform: translatey(0px);
+  }
+  50% {
+      transform: translatey(-15px);
+  }
+  100% {
+      transform: translatey(0px);
+  }
+}
+
+
 .hideScrollBar::-webkit-scrollbar {
   display: none;
 }

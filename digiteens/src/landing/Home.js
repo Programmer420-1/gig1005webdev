@@ -50,7 +50,6 @@ const SVGContainer = styled.div`
 
 const LightingContainer = styled.div`
     position : absolute;
-
     @media(max-width : 1007px){
         width: 100vw;
         padding-left: 2.5rem;
