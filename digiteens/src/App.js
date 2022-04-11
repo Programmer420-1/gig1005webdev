@@ -12,14 +12,21 @@ import {
 
 import { AboutUs } from "./pages/About Us/AboutUs";
 import React from "react";
+import Event from './pages/Event';
+import MyGallery from './pages/Gallery';
+import QnA from './pages/QnA';
+
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
-          {/* <Route exact path="/home" element={<Landing />} />
-          <Route exact path="/" element={<Landing />} /> */}
-          <Route exact path="/" element={<AboutUs />} />
+          {/* <Route exact path="/home" element={<Landing />} */}
+          <Route exact path="/" element={<Landing />} />
+          <Route exact path="/about%20us" element={<AboutUs />} />
+          <Route exact path="/faq" element={<QnA/>}/>
+      <Route exact path="/gallery" element={<MyGallery/>}/>
+      <Route exact path="/event" element={<Event/>}/>
         </Routes>
       </div>
     </Router>

@@ -1,8 +1,8 @@
 import React from "react";
 import "./AboutUs.css";
 import AboutOval from "./AboutOval";
-import { BsArrowDownCircle } from "react-icons/bs";
-import Carousel from "react-elastic-carousel";
+import ArrowCircleDownIcon from '@mui/icons-material/ArrowCircleDown';
+// import Carousel from "react-elastic-carousel";
 import Card from "./Card";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,14 +16,17 @@ import "./swiper.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
+import { Container } from "@mui/material";
+import NavBar from "../../commons/navbar";
+import { color } from "@mui/system";
 
 // image in here, the stars use CSS, background: url("imagePath");
 class AboutUs extends React.Component {
   render() {
     return (
       <div className="About-Us-Setting">
+          <NavBar/>
         <Stary />
-        <UpNavigator />
         <AboutUsBody />
       </div>
     );
@@ -131,7 +134,7 @@ class UpDisplay extends React.Component {
           TEAM
         </div>
         <button className="button" style={{ top: "46.4vw" }}>
-          <BsArrowDownCircle style={{ width: "1.8vw", height: "1.8vw" }} />
+          <ArrowCircleDownIcon style={{ width: "1.8vw", height: "1.8vw", color:"black"}} />
         </button>
       </div>
     );
