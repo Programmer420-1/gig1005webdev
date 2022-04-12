@@ -3,7 +3,6 @@ import "./AboutUs.css";
 
 // Import Icons
 import AboutOval from "./AboutOval";
-import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,9 +13,7 @@ import "./swiper.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
-import { Container } from "@mui/material";
 import NavBar from "../../commons/navbar";
-import { color, maxWidth } from "@mui/system";
 
 class AboutUs extends React.Component {
   render() {
@@ -56,7 +53,6 @@ class AboutUsBody extends React.Component {
   }
 }
 
-// let navigator = document.querySelector(.)
 class LeftMenu extends React.Component {
   render() {
     return (
@@ -87,21 +83,6 @@ class UpDisplay extends React.Component {
           OUR <br />
           TEAM
         </div>
-        {/* <button className="">
-          <ArrowCircleDownIcon
-            style={{
-              backgroundColor: "white",
-              color: "#0a2729",
-              borderRadius: "90%",
-              cursor: "pointer",
-              position: "absolute",
-              width: "1.8vw",
-              height: "1.8vw",
-              left: "49vw",
-              top: "46.9vw",
-            }}
-          />
-        </button> */}
       </div>
     );
   }
@@ -139,8 +120,42 @@ class HoriMenu extends React.Component {
       <div className="slider">
         <Swiper
           slidesPerView={2}
-          spaceBetween={132}
           slidesPerGroup={2}
+          breakpoints={{
+            1519: {
+              spaceBetween: 135,
+            },
+            1470: {
+              spaceBetween: 135,
+            },
+            1350: {
+              spaceBetween: 125,
+            },
+            1230: {
+              spaceBetween: 115,
+            },
+            1100: {
+              spaceBetween: 105,
+            },
+            1000: {
+              spaceBetween: 95,
+            },
+            870: {
+              spaceBetween: 85,
+            },
+            750: {
+              spaceBetween: 75,
+            },
+            700: {
+              spaceBetween: 65,
+            },
+            550: {
+              spaceBetween: 60,
+            },
+            1: {
+              spaceBetween: 50,
+            },
+          }}
           loop={true}
           loopFillGroupWithBlank={true}
           navigation={true}
@@ -155,14 +170,14 @@ class HoriMenu extends React.Component {
                 HOD <br />
               </div>
               <div className="leftText">
-                Meran <br />
+                Wan Jun <br />
                 Shiao Yin <br />
-                Nien <br />
+                Yun Onn <br />
               </div>
               <div className="rightText">
                 Wei Xin <br />
-                Yun Onn <br />
-                Wan Jun <br />
+                Swee Nien <br />
+                Meran <br />
               </div>
               <div className="line"></div>
             </div>
@@ -255,7 +270,7 @@ class HoriMenu extends React.Component {
                 HOD <br />
               </div>
               <div className="leftText">
-                Lim HT <br />
+                Hon Ting <br />
                 Jia Hui <br />
                 xx <br />
               </div>
@@ -269,19 +284,83 @@ class HoriMenu extends React.Component {
           </SwiperSlide>
           <SwiperSlide>
             <h1 className="slide-Title">Mentor G1</h1>
-            Member 1
+            <div className="width">
+              Mentor <br />
+              <div className="HOD">
+                Group 1 <br />
+              </div>
+              <div className="leftText">
+                xx <br />
+                xx <br />
+                xx <br />
+              </div>
+              <div className="rightText">
+                xx <br />
+                xx <br />
+                xx <br />
+              </div>
+              <div className="line"></div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
             <h1 className="slide-Title">Mentor G2</h1>
-            Member 7
+            <div className="width">
+              Mentor <br />
+              <div className="HOD">
+                Group 2 <br />
+              </div>
+              <div className="leftText">
+                xx <br />
+                xx <br />
+                xx <br />
+              </div>
+              <div className="rightText">
+                xx <br />
+                xx <br />
+                xx <br />
+              </div>
+              <div className="line"></div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
             <h1 className="slide-Title">Mentor G3</h1>
-            Member 13
+            <div className="width">
+              Mentor <br />
+              <div className="HOD">
+                Group 3 <br />
+              </div>
+              <div className="leftText">
+                xx <br />
+                xx <br />
+                xx <br />
+              </div>
+              <div className="rightText">
+                xx <br />
+                xx <br />
+                xx <br />
+              </div>
+              <div className="line"></div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
             <h1 className="slide-Title">Mentor G4</h1>
-            Member 19
+            <div className="width">
+              Mentor <br />
+              <div className="HOD">
+                Group 4 <br />
+              </div>
+              <div className="leftText">
+                xx <br />
+                xx <br />
+                xx <br />
+              </div>
+              <div className="rightText">
+                xx <br />
+                xx <br />
+                xx <br />
+              </div>
+              <div className="line"></div>
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
@@ -293,8 +372,6 @@ const scrollToTop = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
-    /* you can also use 'auto' behaviour
-         in place of 'smooth' */
   });
 };
 
