@@ -15,6 +15,7 @@ import React from "react";
 import Event from './pages/Event';
 import MyGallery from './pages/Gallery';
 import QnA from './pages/QnA';
+import Leaderboard from "./pages/Leaderboard";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/faq" element={<QnA/>}/>
       <Route exact path="/gallery" element={<MyGallery/>}/>
       <Route exact path="/event" element={<Event/>}/>
+      <Route exact path="/leaderboard" element={<Leaderboard/>}/>
         </Routes>
       </div>
     </Router>

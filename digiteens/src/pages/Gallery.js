@@ -87,10 +87,10 @@ function MyGallery() {
     const [model, setModel] = useState(false);
     const [tempSrc, setTempSrc] = useState('');
 
-    const openLightbox = useCallback((event, { photo, key }) => {
-        setTempSrc(data[key - 1].src);
-        setModel(true);
-    })
+    // const openLightbox = useCallback((event, { photo, key }) => {
+    //     setTempSrc(data[key - 1].src);
+    //     setModel(true);
+    // })
 
     const getImg = (src) => {
         setTempSrc(src);
@@ -100,8 +100,9 @@ function MyGallery() {
     return (
         <>
             <Wrap>
+            <NavBar />
+
                 <Container>
-                    <NavBar />
                     <div className={model ? 'model open' : 'model'}>
                         <img src={tempSrc} />
                         <CloseIcon className="closeIcon" onClick={() => setModel(false)} />
