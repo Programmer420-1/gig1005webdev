@@ -55,7 +55,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
-  justify-content: center;
+  justify-content: space-evenly;
   -webkit-box-align: center;
   -ms-flex-align: center;
   /* -webkit-align-items: center;
@@ -67,7 +67,7 @@ body {
 
 .width {
   text-align: center;
-  width: 20vw;
+  width: 100%;
   overflow: visible;
 }
 
@@ -75,7 +75,8 @@ body {
   position: absolute;
   line-height: 7vw;
   text-align: right;
-  width: 8.2vw;
+  width: 42%;
+  font-size: 1.3vw;
 }
 
 .rightText {
@@ -83,7 +84,9 @@ body {
   line-height: 7vw;
   padding-top: 3.5vw;
   z-index: 100;
-  margin-left: 11.8vw;
+  margin-left: 57.5%;
+  font-size: 1.3vw;
+  width: 45%;
 }
 
 .line {
@@ -92,7 +95,8 @@ body {
   background-size: contain;
   width: 0.93vw;
   height: 24vw;
-  margin-left: 9.55vw;
+
+  margin-left: 12.3vw;
   /* border-left: 1px solid white; */
   /* height: 23vh;
   margin-left: 3.5vw; */
@@ -127,17 +131,27 @@ body {
 }
 
 .swiper-button-prev {
+  background-image: url(../../../assets/images/Left.png);
   left: -8.5vw;
+  width: 1.6vw;
+  height: 1.6vw;
+  background-size: contain;
 }
 
 .swiper-button-next {
+  background-image: url(../../../assets/images/Right.png);
   right: -8.5vw;
+  width: 1.6vw;
+  height: 1.6vw;
+  background-size: contain;
 }
 
 .swiper-button-next::after {
-  content: url(../../../assets/images/Right.png);
+  /* content: url(../../../assets/images/Right.png); */
+  display: none;
 }
 
 .swiper-button-prev::after {
-  content: url(../../../assets/images/Left.png);
+  /* content: url(../../../assets/images/Left.png); */
+  display: none;
 }
