@@ -94,7 +94,7 @@ function Modules() {
 function Tiktok() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center lg:mt-15 mt-5">
+      <div className="flex flex-col items-center justify-center h-full">
         <div className="flex flex-col shadow-md cursor-pointer w-96 hover:-translate-y-1 duration-300">
 
           <div className="inline relative group h-48">
@@ -124,10 +124,10 @@ function Tiktok() {
 
             <div className="flex flex-row flex-auto justify-end mt-7 mb-5 mx-auto">
               <a className="flex text-xs border px-3 my-auto py-2 
-                        border-amber-500 group hover:bg-amber-500 
+                        border-[#106466] group hover:bg-[#12FFC9] hover:border-[#12FFC9]
                         rounded-xss
                         transition-all duration-200 rounded">
-                <div className="text-xxs text-amber-700 font-semibold group-hover:text-white delay-100">
+                <div className="text-xxs text-[#106466] font-semibold group-hover:text-white delay-100">
                   Join!
                 </div>
               </a>

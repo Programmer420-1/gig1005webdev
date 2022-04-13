@@ -5,7 +5,7 @@ function EventSection({title ,backgroundImg, contentComp}) {
   return (
     <Section bgImage={backgroundImg} className='snap-always snap-start overflow-hidden text-center'>
         <div className='md:container md:mx-auto h-full flex flex-col'>
-        {title ? <h1 className='text-white  md:pt-10 pt-5 lg:pt-32 uppercase text-2xl text-center font-bold'>{title}</h1> : <></>}
+        {title ? <h1 className='text-white md:pt-10 pt-5 lg:pt-[7.5rem] uppercase text-2xl text-center font-bold'>{title}</h1> : <></>}
            {contentComp} 
         </div>
     </Section>
