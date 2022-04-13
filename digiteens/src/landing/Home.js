@@ -15,8 +15,8 @@ const Home = () => {
                 <Timeline />
             </TimelineContainer> */}
             <HeadingContainer>
-                <Heading />
                 <Subheading />
+                <Heading />
             </HeadingContainer>
         </SVGContainer>
     )

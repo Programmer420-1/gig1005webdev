@@ -11,6 +11,7 @@ const Wrapper = styled.div`
     margin-left: 4rem;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    z-index: 9999;
 
     @media(max-width: 1007px){
         top:95%;

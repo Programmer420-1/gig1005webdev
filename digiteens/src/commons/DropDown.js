@@ -20,7 +20,7 @@ const fadeInDownAnimation = keyframes`${fadeInDown}`;
 
 const Container = styled.div`
     animation: 0.3s ${fadeInDownAnimation};
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

@@ -10,6 +10,35 @@ root {
   font-size: 1rem;
 }
 
+html{
+  scroll-snap-type: y mandatory;
+}
+
+.dot{
+r:0%;
+  transition: fill 0.2s ease-in-out;
+}
+
+.dot:hover{
+  fill: #12FFC9;
+}
+
+.pop-up{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  cursor: pointer;
+  width: min-content;
+  z-index: 9999;
+  transition: color 0.4s ease-in-out;
+}
+
+.pop-up:hover{
+  color: #12FFC9;
+}
+
+
 .section{
   height : 100vh;
   width : 100vw;
@@ -20,13 +49,18 @@ root {
 .section1{
   height : 100vh;
   width : 100vw;
+  display: flex;
+  align-items: center;
+  padding-right: 5rem;
+  justify-content: flex-end;
   overflow-x: hidden;
   top : 100vh;
   position: absolute;
-  /* background-color : #00FF00; */
 }
 
 .section2{
+  //border-top: 1px solid #ffffff;
+  //border-bottom: 1px solid #ffffff;
   height : 100vh;
   width : 100vw;
   overflow-x: hidden;
@@ -36,15 +70,21 @@ root {
 }
 
 .section3{
+  //border-top: 1px solid #ffffff;
+  //border-bottom: 1px solid #ffffff;
   height : 100vh;
   width : 100vw;
   overflow-x: hidden;
   top : 300vh;
   position: absolute;
-  /* background-color : #00FF00; */
+  display: flex;
+  justify-content: right;
+      /* background-color : #00FF00; */
 }
 
 .section4{
+  //border-top: 1px solid #ffffff;
+  //border-bottom: 1px solid #ffffff;
   height : 100vh;
   width : 100vw;
   overflow-x: hidden;
@@ -66,8 +106,8 @@ root {
 }
 
 
-.hideScrollBar::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+    display: none;
 }
 
 .hideScrollBar{
@@ -75,5 +115,96 @@ root {
   scrollbar-width: none; 
 }
 
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0.8;
+  }
+  to {
+    stroke-dashoffset: 0.465;
+  }
+}
+
+@keyframes dash1 {
+  from {
+    stroke-dashoffset: 0.465;
+  }
+  to {
+    stroke-dashoffset: 0.3;
+  }
+}
+
+@keyframes dash2 {
+  from {
+    stroke-dashoffset: 0.3;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes zoomIn{
+  0%{
+    r: 0%;
+  }
+  50%{
+    r: 0.5%;
+  }
+  80%{
+    r:0.35%;
+  }
+  100%{
+    r: 0.4%;
+  }
+}
+
+@keyframes fadeUp {
+  from{
+    opacity: 0;
+    transform: translatey(50%);
+  }
+  to{
+    opacity: 1;
+    transform: translatey(0%);
+  }
+}
+
+@keyframes fadeDown {
+  from{
+    opacity: 0;
+    transform: translatey(-50%);
+  }
+  to{
+    opacity: 1;
+    transform: translatey(0%);
+  }
+}
+
+@keyframes fadeLeft {
+  from{
+    opacity: 0;
+    transform: translatex(50%);
+  }
+  to{
+    opacity: 1;
+    transform: translatex(0%);
+  }
+}
+
+@keyframes fadeRight {
+  from{
+    opacity: 0;
+    transform: translatex(-50%);
+  }
+  to{
+    opacity: 1;
+    transform: translatex(0%);
+  }
+}
+
+@media(max-width:1007px){
+  .section1{
+    padding-right:0;
+  }
+}
 
 

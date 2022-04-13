@@ -7,10 +7,9 @@ import {IoClose} from 'react-icons/io5'
 import DropDown from './DropDown'
 
 
-const NavBar = () => {
+const NavBar = ({isScrolled}) => {
     // track menu is pressed
     const [isOpen, setIsOpen] = useState(false);
-    
     return (
         <>
         {
@@ -21,7 +20,7 @@ const NavBar = () => {
             }}/>:<CloseButton onClick={()=>{
                 setIsOpen(!isOpen);
             }}/>}
-        <NavList>
+        <NavList isScrolled={isScrolled}>
             <NavItem pageName="Home" />
             <NavItem pageName="Event" />
             <NavItem pageName="Leaderboard" />
@@ -87,6 +86,8 @@ const NavList = styled.div`
     font-weight : 600;
     position: fixed;
     z-index: 9999;
+    transform: ${props=>props.isScrolled?"translateY(-100%)":"translateY(0%)"};
+    transition: transform 0.5s ease-in-out;
 
     @media(max-width : 1007px){
         width : 100vw;
