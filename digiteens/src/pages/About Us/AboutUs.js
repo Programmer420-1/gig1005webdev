@@ -44,7 +44,6 @@ class AboutUsBody extends React.Component {
   render() {
     return (
       <div>
-        <LeftMenu />
         <UpDisplay />
         <MiddleParticle />
         <BottomHoriMenu />
@@ -93,6 +92,7 @@ class MiddleParticle extends React.Component {
     return (
       <div className="Ellipse">
         <AboutOval style={{ width: "100vw" }} />
+        <div className="supervisor"/>
       </div>
     );
   }
@@ -104,10 +104,10 @@ class BottomHoriMenu extends React.Component {
       <>
         <div>
           <HoriMenu />
-          <button className="top" onClick={scrollToTop}>
+          <button className="top hidden md:block" onClick={scrollToTop}>
             <scrollToTop />
           </button>
-          <text className="bot">back to top</text>
+          <text className="bot hidden md:block">back to top</text>
         </div>
       </>
     );
