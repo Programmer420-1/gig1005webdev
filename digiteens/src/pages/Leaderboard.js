@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import NavBar from '../commons/navbar'
 import tw, { styled } from 'twin.macro'
 import LeaderboardDropdown from '../component/LeaderboardDropdown'
-import { maxWidth } from '@mui/system'
 
 const data = {
   "Angular":["image1.jpg", "image1.jpg", "image3.jpg"],

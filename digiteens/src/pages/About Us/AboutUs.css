@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap");
 
+*{
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+ /*
+   Introduced in Internet Explorer 10.
+   See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+ */
+ -ms-user-select: none;
+ user-select: none;
+}
 root {
   text-align: left;
   font-family: "Amiko";
@@ -29,12 +41,10 @@ root {
   top: 1052px;
 
   border-radius: 50%;
-  background: radial-gradient(
-    60.55% 60.92% at 50% 50%,
-    #106466 0%,
-    rgba(113, 80, 133, 0.046875) 75.52%,
-    #0fefbd 94.27%
-  );
+  background: radial-gradient(60.55% 60.92% at 50% 50%,
+      #106466 0%,
+      rgba(113, 80, 133, 0.046875) 75.52%,
+      #0fefbd 94.27%);
   transform: rotate(1.09deg);
 }
 
@@ -81,10 +91,10 @@ root {
 
 .team {
   position: absolute;
-  width: 966px;
-  height: 329px;
-  left: 45.5vw;
-  top: 13.3vw;
+  width: 30vw;
+  height: 20vw;
+  left: 45vw;
+  top: 18vw;
 
   font-weight: 700;
   font-size: 15vw;
@@ -93,6 +103,14 @@ root {
   letter-spacing: 3px;
 
   color: #12ffc9;
+
+  @media only screen and (min-width: 1024px) {
+    width: 966px;
+    height: 329px;
+    left: 45.5vw;
+    top: 13.3vw;
+
+  }
 }
 
 .mirrorTeam {
@@ -208,4 +226,25 @@ root {
 
   /* light1 green */
   color: #12ffc9;
+}
+
+.supervisor {
+  background-image: url("../../assets/Group\ 5.svg");
+  background-repeat: no-repeat;
+  background-size: 75%;
+  position: absolute;
+  width: 110vw;
+  height: 60vw;
+  left: 16vw;
+  top: 31vw;  
+}
+
+@media only screen and (min-width: 1024px) {
+  .supervisor{
+
+  background-size: 65%;
+  top: 34vw;
+  left: 22vw;
+  }
+  
 }

@@ -49,10 +49,10 @@ function Modules() {
     <>
       <TabsContainer>
         <Tabs selectedTab={activeTab} onChange={handleChange}>
-          <Tab label="Module 1" value={1}></Tab>
-          <Tab label="Module 2" value={2}></Tab>
-          <Tab label="Module 3" value={3}></Tab>
-          <Tab label="Module 4" value={4}></Tab>
+          <Tab label="Digital Opportunity" value={1}></Tab>
+          <Tab label="Digital Privacy" value={2}></Tab>
+          <Tab label="Digital Security" value={3}></Tab>
+          <Tab label="Digital Advocacy" value={4}></Tab>
         </Tabs>
       </TabsContainer>
       <TabsContainer className='h-4/5 grow'>
