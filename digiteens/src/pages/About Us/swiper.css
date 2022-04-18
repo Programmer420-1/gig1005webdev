@@ -31,9 +31,9 @@ body {
 .slider {
   position: relative;
   height: 38vw;
-  width: 60vw;
+  width: 65vw;
   top: 135vw;
-  left: 27vw;
+  left: 19vw;
 }
 
 .swiper-slide {
@@ -81,22 +81,23 @@ body {
 
 .rightText {
   position: absolute;
+  text-align: left;
   line-height: 7vw;
   padding-top: 3.5vw;
   z-index: 100;
   margin-left: 57.5%;
   font-size: 1.3vw;
-  width: 45%;
+  width: 40%;
 }
 
 .line {
   background-image: url(../../../assets/images/Line\ 22.png);
   position: absolute;
   background-size: contain;
-  width: 0.93vw;
-  height: 24vw;
+  width: 0.85vw;
+  height: 23vw;
 
-  margin-left: 12.3vw;
+  margin-left: 48.1%;
   /* border-left: 1px solid white; */
   /* height: 23vh;
   margin-left: 3.5vw; */
