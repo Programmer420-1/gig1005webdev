@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap");
 
-*{
+* {
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
 
- /*
+  /*
    Introduced in Internet Explorer 10.
    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
  */
- -ms-user-select: none;
- user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 root {
   text-align: left;
@@ -41,10 +41,12 @@ root {
   top: 1052px;
 
   border-radius: 50%;
-  background: radial-gradient(60.55% 60.92% at 50% 50%,
-      #106466 0%,
-      rgba(113, 80, 133, 0.046875) 75.52%,
-      #0fefbd 94.27%);
+  background: radial-gradient(
+    60.55% 60.92% at 50% 50%,
+    #106466 0%,
+    rgba(113, 80, 133, 0.046875) 75.52%,
+    #0fefbd 94.27%
+  );
   transform: rotate(1.09deg);
 }
 
@@ -52,7 +54,6 @@ root {
   position: absolute;
   width: 110vw;
   height: 60vw;
-  left: -24.61px;
   top: 30vw;
 }
 
@@ -79,6 +80,7 @@ root {
   height: 24px;
   left: 36vw;
   top: 16.9vw;
+  text-align: left;
 
   font-weight: 700;
   font-size: 3.2vw;
@@ -94,7 +96,7 @@ root {
   width: 30vw;
   height: 20vw;
   left: 45vw;
-  top: 18vw;
+  top: 12.5vw;
 
   font-weight: 700;
   font-size: 15vw;
@@ -109,7 +111,6 @@ root {
     height: 329px;
     left: 45.5vw;
     top: 13.3vw;
-
   }
 }
 
@@ -117,6 +118,7 @@ root {
   position: absolute;
   left: 11.3vw;
   top: 19vw;
+  text-align: left;
 
   font-weight: 700;
   font-size: 13vw;
@@ -154,7 +156,7 @@ root {
 
   position: absolute;
   opacity: 0.7;
-  left: 56vw;
+  right: 0;
   top: 11.5vw;
 
   background-size: cover;
@@ -236,15 +238,13 @@ root {
   width: 110vw;
   height: 60vw;
   left: 16vw;
-  top: 31vw;  
+  top: 31vw;
 }
 
 @media only screen and (min-width: 1024px) {
-  .supervisor{
-
-  background-size: 65%;
-  top: 34vw;
-  left: 22vw;
+  .supervisor {
+    background-size: 65%;
+    top: 34vw;
+    left: 22vw;
   }
-  
 }

@@ -92,7 +92,7 @@ class MiddleParticle extends React.Component {
     return (
       <div className="Ellipse">
         <AboutOval style={{ width: "100vw" }} />
-        <div className="supervisor"/>
+        <div className="supervisor" />
       </div>
     );
   }
@@ -152,8 +152,17 @@ class HoriMenu extends React.Component {
             550: {
               spaceBetween: 60,
             },
-            1: {
+            400: {
               spaceBetween: 50,
+            },
+            350: {
+              spaceBetween: 35,
+            },
+            250: {
+              spaceBetween: 24,
+            },
+            1: {
+              spaceBetween: 30,
             },
           }}
           loop={true}
@@ -290,14 +299,14 @@ class HoriMenu extends React.Component {
                 Group 1 <br />
               </div>
               <div className="leftText">
-                xx <br />
-                xx <br />
-                xx <br />
+                YuHao <br />
+                Jerry <br />
+                Megat <br />
               </div>
               <div className="rightText">
-                xx <br />
-                xx <br />
-                xx <br />
+                Wei Hong <br />
+                Shahirah <br />
+                Jannah <br />
               </div>
               <div className="line"></div>
             </div>
@@ -310,13 +319,13 @@ class HoriMenu extends React.Component {
                 Group 2 <br />
               </div>
               <div className="leftText">
-                xx <br />
-                xx <br />
-                xx <br />
+                Yun Onn <br />
+                Fahmie <br />
+                Haikal <br />
               </div>
               <div className="rightText">
-                xx <br />
-                xx <br />
+                Qian Xuan <br />
+                Fazreilie <br />
                 xx <br />
               </div>
               <div className="line"></div>
@@ -330,13 +339,13 @@ class HoriMenu extends React.Component {
                 Group 3 <br />
               </div>
               <div className="leftText">
-                xx <br />
-                xx <br />
-                xx <br />
+                Hakimi <br />
+                Zheng Yu <br />
+                Bade Srija <br />
               </div>
               <div className="rightText">
-                xx <br />
-                xx <br />
+                Ching Yen <br />
+                Qiao Fang <br />
                 xx <br />
               </div>
               <div className="line"></div>
@@ -350,13 +359,13 @@ class HoriMenu extends React.Component {
                 Group 4 <br />
               </div>
               <div className="leftText">
-                xx <br />
-                xx <br />
-                xx <br />
+                Firdaus <br />
+                Jasmine <br />
+                Janice <br />
               </div>
               <div className="rightText">
-                xx <br />
-                xx <br />
+                Eusoff <br />
+                Jia Wen <br />
                 xx <br />
               </div>
               <div className="line"></div>
