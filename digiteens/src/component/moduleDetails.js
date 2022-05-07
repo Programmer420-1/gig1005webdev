@@ -8,7 +8,7 @@ export const ModuleDetails = ({ details, qrcode, timetable }) => {
             <div className="mx-5 lg:mx-32 flex justify-between flex-col h-full">
                 <div className='flex flex-col md:flex-row md:justify-between md:items-center'>
                     <div className='md:text-left' style={{'maxWidth': '800px'}}>
-                        <p className='md:mb-2 mb-3 text-xl font-semibold'>Course details</p>
+                        <p className='md:mb-2 mb-3 text-xl font-semibold'>Course Details</p>
                         <p className='mb-4 md:mb-0 text-slate-400'>{details}</p>
                     </div>
                     <a className='md:hidden border-[#FFCB9B] mx-auto rounded border py-2 block cursor-pointer transition-all duration-200 hover:underline text-[#FFCB9B] hover:brightness-75' style={{maxWidth:'150px'}}>

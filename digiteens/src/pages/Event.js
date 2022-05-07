@@ -13,7 +13,7 @@ function Event() {
       <>
         <NavBar />
         <div style={{"minHeight": "100vh"}}>
-        <EventSection title="" backgroundImg='' contentComp={EventLanding()} />
+        <EventSection title="" backgroundImg='event.jpg' contentComp={EventLanding()} />
 
         </div>
 
@@ -30,7 +30,7 @@ export default Event
 
 function EventLanding() {
   return (
-    <div className='absolute inset-x-0 bottom-40 h-16 font-bold text-7xl text-center'>
+    <div className='flex flex-col justify-center font-bold text-7xl text-center' style={{"height": "100vh"}}>
       <ReactTypingEffect
         text={["EVENT"]}
         eraseDelay={2000}
@@ -52,8 +52,8 @@ function Modules() {
     <>
       <TabsContainer>
         <Tabs selectedTab={activeTab} onChange={handleChange}>
-          <Tab label="Digital Opportunity" value={1}></Tab>
-          <Tab label="Digital Privacy" value={2}></Tab>
+          <Tab label="Digital Privacy" value={1}></Tab>
+          <Tab label="Digital Opportunities" value={2}></Tab>
           <Tab label="Digital Security" value={3}></Tab>
           <Tab label="Digital Advocacy" value={4}></Tab>
         </Tabs>
@@ -61,28 +61,28 @@ function Modules() {
       <TabsContainer className='h-4/5 grow'>
         <TabPanel value={activeTab} selectedIndex={1}>
           <ModuleDetails
-            details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque, imperdiet vel ullamcorper eget, venenatis vitae enim. Nam libero sapien, volutpat nec volutpat vel, tincidunt at libero. Proin iaculis dignissim tellus, vitae volutpat est tristique nec. Maecenas placerat posuere venenatis. Phasellus congue quis mi sit amet tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed rhoncus elit sed pellentesque semper. Nulla aliquam tellus sit amet ipsum luctus, eu dignissim velit bibendum. Integer quis mattis odio."
+            details="Participants will know more about malicious software and better understand the meaning of digital privacy and what is their privacy right."
             qrcode="qrcode.png"
             timetable="timetable.jpeg"
           />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={2}>
           <ModuleDetails
-            details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque, imperdiet vel ullamcorper eget, venenatis vitae enim. Nam libero sapien, volutpat nec volutpat vel, tincidunt at libero. Proin iaculis dignissim tellus, vitae volutpat est tristique nec. Maecenas placerat posuere venenatis. Phasellus congue quis mi sit amet tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed rhoncus elit sed pellentesque semper. Nulla aliquam tellus sit amet ipsum luctus, eu dignissim velit bibendum. Integer quis mattis odio."
+            details="Participants get to know the purpose of using algorithms and how to create algorithms to solve problems."
             qrcode="qrcode.png"
             timetable="timetable.jpeg"
           />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={3}>
           <ModuleDetails
-            details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque, imperdiet vel ullamcorper eget, venenatis vitae enim. Nam libero sapien, volutpat nec volutpat vel, tincidunt at libero. Proin iaculis dignissim tellus, vitae volutpat est tristique nec. Maecenas placerat posuere venenatis. Phasellus congue quis mi sit amet tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed rhoncus elit sed pellentesque semper. Nulla aliquam tellus sit amet ipsum luctus, eu dignissim velit bibendum. Integer quis mattis odio."
+            details="Participans will be introduced the different types of scam and common online frauds and the ways to avoid getting scammed."
             qrcode="qrcode.png"
             timetable="timetable.jpeg"
           />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={4}>
           <ModuleDetails
-            details="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh neque, imperdiet vel ullamcorper eget, venenatis vitae enim. Nam libero sapien, volutpat nec volutpat vel, tincidunt at libero. Proin iaculis dignissim tellus, vitae volutpat est tristique nec. Maecenas placerat posuere venenatis. Phasellus congue quis mi sit amet tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed rhoncus elit sed pellentesque semper. Nulla aliquam tellus sit amet ipsum luctus, eu dignissim velit bibendum. Integer quis mattis odio."
+            details="Participants will understand the meaning and the importance of digital advocy after this event."
             qrcode="qrcode.png"
             timetable="timetable.jpeg"
           />
