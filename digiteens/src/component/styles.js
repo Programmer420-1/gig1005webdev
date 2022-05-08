@@ -1,7 +1,5 @@
 import tw, { styled, css } from 'twin.macro'
 
-import React from 'react'
-
 export const TabHeaderContainer = styled.div`
     display: flex;
     flex-direction: column;

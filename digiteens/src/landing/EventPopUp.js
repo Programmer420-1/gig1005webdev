@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const EventPopUp = ({name,date, index}) => {
   return (
-    <div class={"pop-up "+"pop-up"+index}>
+    <div class={"pop-up "+"pop-up"+index }>
         <Name>{name}</Name>
         <Date>{date}</Date>
     </div>

@@ -16,10 +16,33 @@ import { Pagination, Navigation } from "swiper";
 import NavBar from "../../commons/navbar";
 
 class AboutUs extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = { isScrolled: false };
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        this.state.isScrolled = true;
+        console.log("yay");
+      }
+      else {
+        this.state.isScrolled = false;
+        console.log("nay");
+      }
+    });
+  }
+
+  componentDidUpdate() {
+    this.render();
+  }
+
   render() {
     return (
       <div className="About-Us-Setting">
-        <NavBar />
+        <NavBar isScrolled={this.state.isScrolled} />
         <Stary />
         <AboutUsBody />
       </div>

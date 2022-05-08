@@ -5,7 +5,7 @@ import ItemSpan from './ItemSpan'
 
 const Wrapper = styled.div`
     position: fixed;
-    display: flex;
+    display: ${props=>props.isVisible?"flex":"none"};
     flex-direction : column;
     top: 50%;
     margin-left: 4rem;
@@ -52,18 +52,18 @@ const Dot = styled.span`
     }
 `
 const SectionBar = ({ current }) => {
-    const names = ["welcome", "about us", "timeline", "sponsors", "join us"]
+    const names = ["welcome", "about us", "timeline", "sponsors", "join us", "footer"]
     const factor = names.indexOf(current);
 
     return (
-        <Wrapper>
+        <Wrapper isVisible={!(current==="footer")}>
             <VertLine>
                 <Dot translateFactor={factor}/>
-                <ItemSpan name="welcome" isActive={current === "welcome"} topMargin={false} />
-                <ItemSpan name="about us" isActive={current === "about us"} />
-                <ItemSpan name="timeline" isActive={current === "timeline"} />
-                <ItemSpan name="sponsors" isActive={current === "sponsors"} />
-                <ItemSpan name="join us" isActive={current === "join us"} />
+                <ItemSpan index={0} name="welcome" isActive={current === "welcome"} topMargin={false} />
+                <ItemSpan index={1} name="about us" isActive={current === "about us"} />
+                <ItemSpan index={2} name="timeline" isActive={current === "timeline"} />
+                <ItemSpan index={3} name="sponsors" isActive={current === "sponsors"} />
+                <ItemSpan index={4} name="join us" isActive={current === "join us"} />
             </VertLine>
         </Wrapper>
     )

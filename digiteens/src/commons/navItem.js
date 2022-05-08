@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from "prop-types"
 import styled from 'styled-components'
-import { NavLink as Link} from 'react-router-dom'
+import { NavLink as Link } from 'react-router-dom'
 
 const navItem = ({ pageName }) => {
-    const route = pageName.toLowerCase()==='home'?'':pageName.toLowerCase();
+    const route = pageName.toLowerCase()==='home'?'':pageName.toLowerCase().replace(" ","%20");
     return (
         <NavLink to={"/"+ route} activestyle>
             <p>{pageName.toUpperCase()}</p>

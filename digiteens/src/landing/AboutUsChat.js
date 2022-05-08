@@ -23,6 +23,10 @@ const Container = styled.div`
         margin: 0.8rem 5rem;
     }
 
+    @media(max-width: 768px){
+        justify-content: center;
+    }
+
 `
 const ChatBubble = styled.div`
     background-color: ${props=>props.isSender?"transparent":"#106466"};
@@ -32,21 +36,20 @@ const ChatBubble = styled.div`
     padding: 1rem 1.5rem;
     text-align: ${props=>props.isSender?"left":"right"};
     max-width: 50vw;
+    animation : ${props=>props.isSender?"color-breathing 2s ease-out infinite alternate":"none"}; 
 
     @media(max-width: 1007px){
         max-width: 60vw;
     }
 
     @media(max-width: 768px){
-        width: 100vw;
-        max-width:100vw;
+        width: 100%;
         text-align: ${props=>props.isSender?"center":"justify"};
         border-radius: 10px 10px 10px 10px;
     }
 
     @media(max-width:576px){
-        width: 100vw;
-        max-width:100vw;
+        width: 100%;
         padding: 0.8rem 1.1rem;
         text-align: center;
         border-radius: 10px 10px 10px 10px;

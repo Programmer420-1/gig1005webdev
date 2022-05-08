@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useCallback, useEffect } from 'react'
 import PhotoAlbum from "react-photo-album";
 import tw, { styled } from 'twin.macro'
 import '../App.css';
@@ -87,6 +87,22 @@ function MyGallery() {
     const [model, setModel] = useState(false);
     const [tempSrc, setTempSrc] = useState('');
 
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        //scroll detection
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+                console.log("yay");
+            }
+            else {
+                setIsScrolled(false);
+                console.log("nay");
+            }
+        });
+    }, []);
+
     // const openLightbox = useCallback((event, { photo, key }) => {
     //     setTempSrc(data[key - 1].src);
     //     setModel(true);
@@ -100,7 +116,7 @@ function MyGallery() {
     return (
         <>
             <Wrap>
-            <NavBar />
+                <NavBar isScrolled={isScrolled} />
 
                 <Container>
                     <div className={model ? 'model open' : 'model'}>

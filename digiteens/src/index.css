@@ -14,6 +14,14 @@ html{
   scroll-snap-type: y mandatory;
 }
 
+.hideScrollBar {
+  scrollbar-width: none;
+}
+
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
 .dot{
 r:0%;
   transition: fill 0.2s ease-in-out;
@@ -38,6 +46,18 @@ r:0%;
   color: #12FFC9;
 }
 
+.colorChange{
+  color: #ffffff;
+  transition: color 0.4s ease-in-out;
+}
+
+.colorChange:hover{
+  color: #12FFC9;
+}
+
+.hidden{
+  display:none;
+}
 
 .section{
   height : 100vh;
@@ -59,19 +79,14 @@ r:0%;
 }
 
 .section2{
-  //border-top: 1px solid #ffffff;
-  //border-bottom: 1px solid #ffffff;
   height : 100vh;
   width : 100vw;
   overflow-x: hidden;
   top : 200vh;
   position: absolute;
-  /* background-color : #FF0000; */
 }
 
 .section3{
-  //border-top: 1px solid #ffffff;
-  //border-bottom: 1px solid #ffffff;
   height : 100vh;
   width : 100vw;
   overflow-x: hidden;
@@ -79,40 +94,36 @@ r:0%;
   position: absolute;
   display: flex;
   justify-content: right;
-      /* background-color : #00FF00; */
 }
 
 .section4{
-  //border-top: 1px solid #ffffff;
-  //border-bottom: 1px solid #ffffff;
   height : 100vh;
   width : 100vw;
   overflow-x: hidden;
   top : 400vh;
   position: absolute;
-  /* background-color : #FF0000; */
 }
 
-@keyframes float {
-  0% {
-      transform: translatey(0px);
-  }
-  50% {
-      transform: translatey(-15px);
-  }
-  100% {
-      transform: translatey(0px);
-  }
+.footer{
+  height: 15vh;
+  width : 100vw;
+  overflow-x: hidden;
+  top : 500vh;
+  position: absolute;
 }
 
-
-::-webkit-scrollbar {
-    display: none;
+.iconButton{
+  margin: 0 8px;
+  transition: all 0.3s ease-in-out;
 }
 
-.hideScrollBar{
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+.iconButton:hover{
+  color: #12FFC9;
+}
+
+.heading-content{
+  display : inline-block;
+  margin : 0;
 }
 
 @keyframes dash {
@@ -150,7 +161,7 @@ r:0%;
     r: 0.5%;
   }
   80%{
-    r:0.35%;
+    r: 0.35%;
   }
   100%{
     r: 0.4%;
@@ -201,9 +212,38 @@ r:0%;
   }
 }
 
+@keyframes float {
+  0% {
+      transform: translatey(0px);
+  }
+  50% {
+      transform: translatey(-15px);
+  }
+  100% {
+      transform: translatey(0px);
+  }
+}
+
+@keyframes color-breathing {
+    from
+    {
+        border-color: #106466;
+        color: #106466;
+    }
+    to
+    {
+      border-color: #12FFC9;
+      color: #12FFC9;
+    }
+}
+
 @media(max-width:1007px){
   .section1{
     padding-right:0;
+  }
+
+  .pop-up{
+    display: none;
   }
 }
 
