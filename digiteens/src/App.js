@@ -1,6 +1,6 @@
-import "./App.css";
+import "./css/App.css";
 import Landing from "./pages/Landing";
-import logo from "./logo.svg";
+
 import {
   BrowserRouter as Router,
   Routes,

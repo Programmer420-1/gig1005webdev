@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutUs.css";
+import "../../css/AboutUs.css";
 
 // Import Icons
 import AboutOval from "./AboutOval";
@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./swiper.css";
+import "../../css/swiper.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
@@ -26,11 +26,9 @@ class AboutUs extends React.Component {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {
         this.state.isScrolled = true;
-        console.log("yay");
       }
       else {
         this.state.isScrolled = false;
-        console.log("nay");
       }
     });
   }

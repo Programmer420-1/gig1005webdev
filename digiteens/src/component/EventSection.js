@@ -17,7 +17,7 @@ export default EventSection
 const Section = styled.div`
     
     width: 100%;
-    background-image: ${props=> `url("/images/${props.bgImage}")`};
+    background-image: ${props=> `url("/assets/images/${props.bgImage}")`};
     background-position: center;
     background-repeat: center;
     background-size: cover;

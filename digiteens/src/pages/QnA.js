@@ -64,7 +64,7 @@ function QnA() {
 export default QnA
 
 const MyContainer = styled.div`
-    background-image: url('./images/qnaBackground.png');
+    background-image: url('/assets/images/qnaBackground.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

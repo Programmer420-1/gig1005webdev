@@ -140,7 +140,7 @@ root {
 }
 
 .upStar {
-  background-image: url(../../../assets/images/UpStar.png);
+  background-image:url(../../public/assets/images/UpStar.png);
 
   position: absolute;
   opacity: 0.8;
@@ -152,7 +152,7 @@ root {
 }
 
 .midStar {
-  background-image: url(../../../assets/images/MidStar.png);
+  background-image: url(../../public/assets/images/MidStar.png);
 
   position: absolute;
   opacity: 0.7;
@@ -166,7 +166,7 @@ root {
 }
 
 .botLeftStar {
-  background-image: url(../../../assets/images/BotLeftStar.png);
+  background-image: url(../../public/assets/images/BotLeftStar.png);
 
   position: absolute;
   opacity: 0.7;
@@ -180,7 +180,7 @@ root {
 }
 
 .botStar {
-  background-image: url(../../../assets/images/BotStar.png);
+  background-image: url(../../public/assets/images/BotStar.png);
 
   left: 0vw;
   bottom: 0;
@@ -194,7 +194,7 @@ root {
 }
 
 .top {
-  background-image: url(../../../assets/images/Top.png);
+  background-image: url(../../public/assets/images/Top.png);
   cursor: pointer;
   position: absolute;
   background-size: contain;
@@ -231,7 +231,7 @@ root {
 }
 
 .supervisor {
-  background-image: url("../../assets/Group\ 5.svg");
+  background-image: url("../../public/assets/svg/Group\ 5.svg");
   background-repeat: no-repeat;
   background-size: 75%;
   position: absolute;

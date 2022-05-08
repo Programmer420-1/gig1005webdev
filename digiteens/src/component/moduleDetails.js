@@ -17,7 +17,7 @@ export const ModuleDetails = ({ details, qrcode, timetable }) => {
                     <div className='mb-4 md:mb-0 hidden md:block lg:mr-5' style={{ 'maxWidth': '150px' }}>
                         <a href="#">
                             <QRCode>
-                                <img className='w-full' src={'images/' + qrcode} />
+                                <img className='w-full' src={'/assets/images/' + qrcode} />
                             </QRCode>
                             <DownloadText className='mt-2'>Scan or Click to Register</DownloadText>
                         </a>
@@ -27,7 +27,7 @@ export const ModuleDetails = ({ details, qrcode, timetable }) => {
                     <p className='mb-2 text-xl font-semibold mt-4 md:mt-0'>Time Table</p>
                     <Timetable className='grow mx-auto hover:scale-110 transition-transform'>
                         <a href='#'>
-                            <img className="h-full" src={'images/' + timetable}></img>
+                            <img className="h-full" src={'/assets/images/' + timetable}></img>
                         </a>
                     </Timetable>
                     <DownloadText className='mx-auto text-xs pt-2'>Download Timetable</DownloadText>

@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react'
 import PhotoAlbum from "react-photo-album";
 import tw, { styled } from 'twin.macro'
-import '../App.css';
+import '../css/App.css';
 import CloseIcon from '@mui/icons-material/Close';
 import DownloadIcon from '@mui/icons-material/Download';
 import { Container } from '@mui/material';
@@ -10,37 +10,37 @@ import NavBar from '../commons/navbar';
 const data = [
     {
         key: 1,
-        src: "/images/image2.jpg",
+        src: "/assets/images/image2.jpg",
         width: 1350,
         height: 900
     },
     {
         key: 2,
-        src: "/images/image1.jpg",
+        src: "/assets/images/image1.jpg",
         width: 900,
         height: 1350
     },
     {
         key: 3,
-        src: "/images/image3.jpg",
+        src: "/assets/images/image3.jpg",
         width: 3021,
         height: 4028
     },
     {
         key: 4,
-        src: "/images/image4.jpg",
+        src: "/assets/images/image4.jpg",
         width: 3568,
         height: 4758
     },
     {
         key: 5,
-        src: "/images/image5.jpg",
+        src: "/assets/images/image5.jpg",
         width: 3955,
         height: 5932
     },
     {
         key: 6,
-        src: "/images/image6.jpg",
+        src: "/assets/images/image6.jpg",
         width: 4624,
         height: 3468
     }

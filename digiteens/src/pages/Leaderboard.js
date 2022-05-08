@@ -56,7 +56,7 @@ const Wrapper = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/images/leaderboardBg.jpg");
+  background-image: url("/assets/images/leaderboardBg.jpg");
   background-position: 0px -200px;
   background-attachment: fixed;
   @media (max-width: 640px){
@@ -75,7 +75,7 @@ const PodiumImg = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: ${props => `url("/images/${props.bgImage}")`};
+  background-image: ${props => `url("/assets/images/${props.bgImage}")`};
 `
 
 const PodiumDiv = styled.div`

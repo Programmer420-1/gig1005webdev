@@ -358,8 +358,8 @@ const Landing = () => {
                     <CollaboratorContainer>
                         <Title>Proudly Collaborated With</Title>
                         <Collaborators>
-                            <Collaborator name="UM STEM Centre" imagelink="images/umstem.jpg" />
-                            <Collaborator name="Meta" imagelink="images/meta.jpg" />
+                            <Collaborator name="Meta" imagelink="/assets/images/meta.jpg" />
+                            <Collaborator name="UM STEM Centre" imagelink="/assets/images/umstem.jpg" />
                         </Collaborators>
                     </CollaboratorContainer>
                 </Fade>
