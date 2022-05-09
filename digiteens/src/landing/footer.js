@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <Container>
         <ButtonGroup>
-            <a href="#" className="iconButton"><FaFacebook size={size}/></a>
-            <a href="#" className="iconButton"><FaInstagram size={size}/></a>
+            <a href="https://m.facebook.com/Digiteens-Unravelling-The-Bits-106205405392525/" className="iconButton"><FaFacebook size={size}/></a>
+            <a href="https://www.instagram.com/digiteens_/" className="iconButton"><FaInstagram size={size}/></a>
             <a href="#" className="iconButton"><FaYoutube size={size}/></a>
         </ButtonGroup>
         <FooterText>

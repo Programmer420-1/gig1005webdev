@@ -15,7 +15,7 @@ import ReactTypingEffect from 'react-typing-effect'
 import ScrollToTop from '../landing/ScrollToTop'
 import LandingSwiper from '../landing/LandingSwiper'
 import LinearTimeline from '../landing/LinearTimeline'
-
+import { NavLink as Link } from 'react-router-dom'
 
 const Container = styled.div`
     height : 515vh;
@@ -275,7 +275,7 @@ const Landing = () => {
                 popup3.style.cssText = "top:15rem;" + "left:" + (parseInt(dot3.getAttribute('cx')) + popup3.offsetWidth - 10) + "px;" + "opacity:0; animation: fadeUp 0.5s ease-in-out 2.00s forwards;";
                 popup4.style.cssText = "top:10rem;" + "left:" + (parseInt(dot4.getAttribute('cx')) + popup4.offsetWidth - 10) + "px;" + "opacity:0; animation: fadeUp 0.5s ease-in-out 2.50s forwards;";
                 popup5.style.cssText = "top:23rem;" + "left:" + (parseInt(dot5.getAttribute('cx')) + popup5.offsetWidth - 10) + "px;" + "opacity:0; animation: fadeUp 0.5s ease-in-out 2.85s forwards;";
-                popup6.style.cssText = "top:19.5rem;" + "left:" + (parseInt(dot6.getAttribute('cx')) + popup6.offsetWidth - 10) + "px;" + "opacity:0; animation: fadeUp 0.5s ease-in-out 3.50s forwards;";
+                popup6.style.cssText = "top:17.5rem;" + "left:" + (parseInt(dot6.getAttribute('cx')) + popup6.offsetWidth - 10) + "px;" + "opacity:0; animation: fadeUp 0.5s ease-in-out 3.50s forwards;";
             }
         }, options);
 
@@ -294,7 +294,7 @@ const Landing = () => {
                 popup3.style.cssText = "top:15rem;" + "left:" + (parseInt(dot3.getAttribute('cx')) + popup3.offsetWidth - 10) + "px;" + "opacity:1";
                 popup4.style.cssText = "top:10rem;" + "left:" + (parseInt(dot4.getAttribute('cx')) + popup4.offsetWidth - 10) + "px;" + "opacity:1";
                 popup5.style.cssText = "top:23rem;" + "left:" + (parseInt(dot5.getAttribute('cx')) + popup5.offsetWidth - 10) + "px;" + "opacity:1";
-                popup6.style.cssText = "top:19.5rem;" + "left:" + (parseInt(dot6.getAttribute('cx')) + popup6.offsetWidth - 10) + "px;" + "opacity:1";
+                popup6.style.cssText = "top:17.5rem;" + "left:" + (parseInt(dot6.getAttribute('cx')) + popup6.offsetWidth - 10) + "px;" + "opacity:1";
             }
         }, options);
 
@@ -345,12 +345,12 @@ const Landing = () => {
 
                 <LinearTimeline />
                 <TimelineDots>
-                    <EventPopUp name="Event 1" date="08/04/2022" index="1" />
-                    <EventPopUp name="Event 2" date="08/04/2022" index="2" />
-                    <EventPopUp name="Event 3" date="08/04/2022" index="3" />
-                    <EventPopUp name="Event 4" date="08/04/2022" index="4" />
-                    <EventPopUp name="Event 5" date="08/04/2022" index="5" />
-                    <EventPopUp name="Event 6" date="08/04/2022" index="6" />
+                    <EventPopUp name="Registration" date="09/05/2022" index="1" />
+                    <EventPopUp name="Module 1" date="14/05/2022" index="2" />
+                    <EventPopUp name="Module 2" date="21/05/2022" index="3" />
+                    <EventPopUp name="Module 3" date="28/05/2022" index="4" />
+                    <EventPopUp name="Module 4" date="04/06/2022" index="5" />
+                    <EventPopUp name="Closing Ceremony" date="04/06/2022" index="6" />
                 </TimelineDots>
             </section>
             <section ref={test2Ref} className="section3 snap-start snap-always">
@@ -373,8 +373,10 @@ const Landing = () => {
                             typingDelay={1000}
                         /></span>
                         <ButtonGroup>
-                            <JoinButton>Yes</JoinButton>
-                            <JoinButton>No</JoinButton>
+                            <Link to={"/event"}>
+                                <JoinButton>Yes</JoinButton>
+                            </Link>
+                            {/* <JoinButton>No</JoinButton> */}
                         </ButtonGroup>
                     </Join>
                 </JoinContainer>

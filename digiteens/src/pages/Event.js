@@ -45,7 +45,7 @@ function EventLanding() {
     <div className='flex flex-col justify-center font-bold text-7xl text-center' style={{ "height": "100vh" }}>
       <ReactTypingEffect
         text={["EVENT"]}
-        eraseDelay={2000}
+        eraseDelay={100000}
         typingDelay={1000}
       />
 
@@ -74,29 +74,33 @@ function Modules() {
         <TabPanel value={activeTab} selectedIndex={1}>
           <ModuleDetails
             details="Participants will know more about malicious software and better understand the meaning of digital privacy and what is their privacy right."
-            qrcode="qrcode.png"
-            timetable="timetable.jpeg"
+            qrcode="digital oppurtunites.png"
+            timetable="digital opportunity schedule.png"
+            gForm="https://forms.gle/8noKVwPN4bs9SBrE6"
           />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={2}>
           <ModuleDetails
             details="Participants get to know the purpose of using algorithms and how to create algorithms to solve problems."
-            qrcode="qrcode.png"
-            timetable="timetable.jpeg"
+            qrcode="digital privacy.png"
+            timetable="digital privacy schedule.png"
+            gForm="https://forms.gle/993yy2HWGsSx3ye27"
           />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={3}>
           <ModuleDetails
             details="Participans will be introduced the different types of scam and common online frauds and the ways to avoid getting scammed."
-            qrcode="qrcode.png"
-            timetable="timetable.jpeg"
+            qrcode="digital security.png"
+            timetable="digital security schedule.png"
+            gForm="https://forms.gle/qM9f2TtFEmiXxNxa7"
           />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={4}>
           <ModuleDetails
             details="Participants will understand the meaning and the importance of digital advocy after this event."
-            qrcode="qrcode.png"
-            timetable="timetable.jpeg"
+            qrcode="digital advocacy.png"
+            timetable="digital advocacy schedule.png"
+            gForm="https://forms.gle/3YhPYPP4gqoMdDje6"
           />
         </TabPanel>
       </TabsContainer>

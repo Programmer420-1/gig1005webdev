@@ -37,7 +37,7 @@ r:0%;
   flex-direction: column;
   color: #ffffff;
   cursor: pointer;
-  width: min-content;
+  width: 5.8rem;
   z-index: 9999;
   transition: color 0.4s ease-in-out;
 }
@@ -81,7 +81,7 @@ r:0%;
 .section2{
   height : 100vh;
   width : 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
   top : 200vh;
   position: absolute;
 }

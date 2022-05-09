@@ -128,7 +128,6 @@ class BottomHoriMenu extends React.Component {
           <button className="top hidden md:block" onClick={scrollToTop}>
             <scrollToTop />
           </button>
-          <text className="bot hidden md:block">back to top</text>
         </div>
       </>
     );
@@ -186,7 +185,7 @@ class HoriMenu extends React.Component {
               spaceBetween: 30,
             },
           }}
-          loop={true}
+          loop={false}
           loopFillGroupWithBlank={true}
           navigation={true}
           modules={[Pagination, Navigation]}
@@ -222,12 +221,12 @@ class HoriMenu extends React.Component {
               <div className="leftText">
                 Zi Wei <br />
                 Asraf <br />
-                xx <br />
+                    <br />
               </div>
               <div className="rightText">
                 Irdina <br />
-                xx <br />
-                xx <br />
+                    <br />
+                    <br />
               </div>
               <div className="line"></div>
             </div>
@@ -242,12 +241,12 @@ class HoriMenu extends React.Component {
               <div className="leftText">
                 Aizat <br />
                 Syakirah <br />
-                xx <br />
+                    <br />
               </div>
               <div className="rightText">
                 Fareez <br />
-                xx <br />
-                xx <br />
+                    <br />
+                    <br />
               </div>
               <div className="line"></div>
             </div>
@@ -262,12 +261,12 @@ class HoriMenu extends React.Component {
               <div className="leftText">
                 Adriana <br />
                 Arina <br />
-                xx <br />
+                    <br />
               </div>
               <div className="rightText">
                 Norshafiqah <br />
-                xx <br />
-                xx <br />
+                    <br />
+                    <br />
               </div>
               <div className="line"></div>
             </div>
@@ -282,12 +281,12 @@ class HoriMenu extends React.Component {
               <div className="leftText">
                 Izyan <br />
                 Sahira <br />
-                xx <br />
+                    <br />
               </div>
               <div className="rightText">
                 Thayananth <br />
-                xx <br />
-                xx <br />
+                    <br />
+                    <br />
               </div>
               <div className="line"></div>
             </div>
@@ -302,12 +301,12 @@ class HoriMenu extends React.Component {
               <div className="leftText">
                 Hon Ting <br />
                 Jia Hui <br />
-                xx <br />
+                    <br />
               </div>
               <div className="rightText">
                 Yan Jian <br />
-                xx <br />
-                xx <br />
+                    <br />
+                    <br />
               </div>
               <div className="line"></div>
             </div>
@@ -347,7 +346,7 @@ class HoriMenu extends React.Component {
               <div className="rightText">
                 Qian Xuan <br />
                 Fazreilie <br />
-                xx <br />
+                    <br />
               </div>
               <div className="line"></div>
             </div>
@@ -367,7 +366,7 @@ class HoriMenu extends React.Component {
               <div className="rightText">
                 Ching Yen <br />
                 Qiao Fang <br />
-                xx <br />
+                    <br />
               </div>
               <div className="line"></div>
             </div>
@@ -387,7 +386,7 @@ class HoriMenu extends React.Component {
               <div className="rightText">
                 Eusoff <br />
                 Jia Wen <br />
-                xx <br />
+                    <br />
               </div>
               <div className="line"></div>
             </div>
