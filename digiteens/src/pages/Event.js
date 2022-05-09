@@ -64,24 +64,24 @@ function Modules() {
     <>
       <TabsContainer>
         <Tabs selectedTab={activeTab} onChange={handleChange}>
-          <Tab key={1} label="Digital Opportunity" value={1}></Tab>
-          <Tab key={2} label="Digital Privacy" value={2}></Tab>
-          <Tab key={3} label="Digital Security" value={3}></Tab>
-          <Tab key={4} label="Digital Advocacy" value={4}></Tab>
+          <Tab key={1} label="D’Algorithmer" value={1}></Tab>
+          <Tab key={2} label="Shhh! Protect Your Rights" value={2}></Tab>
+          <Tab key={3} label="Scams & Swindles 101" value={3}></Tab>
+          <Tab key={4} label="Tweet: Perception Changer" value={4}></Tab>
         </Tabs>
       </TabsContainer>
       <TabsContainer className='h-4/5 grow'>
         <TabPanel value={activeTab} selectedIndex={1}>
           <ModuleDetails
-            details="Participants will know more about malicious software and better understand the meaning of digital privacy and what is their privacy right."
-            qrcode="digital oppurtunites.png"
+            details="Algorithm, what is it? Join us to get the answer! You will have the opportunity to learn how algorithm is applied in our daily life and have a chance to design your own one."
+            qrcode="digital opportunities.png"
             timetable="digital opportunity schedule.png"
             gForm="https://forms.gle/8noKVwPN4bs9SBrE6"
           />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={2}>
           <ModuleDetails
-            details="Participants get to know the purpose of using algorithms and how to create algorithms to solve problems."
+            details="Rights? Right! Privacy rights is important and you will know why by joining this event! You will also know more about malicious software so you can proctect yourself better."
             qrcode="digital privacy.png"
             timetable="digital privacy schedule.png"
             gForm="https://forms.gle/993yy2HWGsSx3ye27"
@@ -89,15 +89,14 @@ function Modules() {
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={3}>
           <ModuleDetails
-            details="Participans will be introduced the different types of scam and common online frauds and the ways to avoid getting scammed."
-            qrcode="digital security.png"
+            details="Oh no! It's scam again! There's so many types of scam and online fraud nowadays and we know it's dangerous to use the technology without knowing how to protect yourself, so join us to know more!"            qrcode="digital security.png"
             timetable="digital security schedule.png"
             gForm="https://forms.gle/qM9f2TtFEmiXxNxa7"
           />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={4}>
           <ModuleDetails
-            details="Participants will understand the meaning and the importance of digital advocy after this event."
+            details="First time hearing digital advocacy? Do you know how it can improve our life and why social medial is important for digital advocacy? Join us to know the answers!"
             qrcode="digital advocacy.png"
             timetable="digital advocacy schedule.png"
             gForm="https://forms.gle/3YhPYPP4gqoMdDje6"

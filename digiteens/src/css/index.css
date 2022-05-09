@@ -248,3 +248,13 @@ r:0%;
 }
 
 
+.timetable{
+  max-height: 500px;
+}
+
+@media screen and (min-height: 960px){
+  .timetable{
+  max-height: 450px;
+
+  }
+}
