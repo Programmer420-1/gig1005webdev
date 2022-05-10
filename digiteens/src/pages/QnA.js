@@ -2,7 +2,7 @@ import React from 'react'
 import tw, { styled } from 'twin.macro'
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
-import { useState } from 'react';
+import { useState, useEffect} from 'react'
 import { Container } from '@mui/material';
 import NavBar from '../commons/navbar';
 const data = [
@@ -24,6 +24,7 @@ const data = [
 
 function QnA() {
     const [selected, setSelected] = useState(null)
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const toggle = (i) => {
         if (selected === i) {
@@ -32,9 +33,26 @@ function QnA() {
         setSelected(i)
     }
 
+    useEffect(() => {
+        function handleScroll() {
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+            }
+            else {
+                setIsScrolled(false);
+            }
+        }
+        //scroll detection
+        window.addEventListener("scroll", handleScroll, true);
+
+        return ()=>{
+            window.removeEventListener("scroll", handleScroll, true);
+        }
+    },[]);
+
     return (
         <>
-            <NavBar />
+            <NavBar isScrolled={isScrolled}/>
             <MyContainer className='pt-10 lg:pt-36' style={{ minHeight: `100vh` }}>
                 <Container>
                     <p className='text-2xl font-bold text-center'><span className='firstLetter'>F</span>REQUENTLY <span className='firstLetter'>A</span>SKED <span className='firstLetter'>Q</span>UESTIONS</p>

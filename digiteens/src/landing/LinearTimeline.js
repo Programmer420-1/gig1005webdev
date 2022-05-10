@@ -34,13 +34,7 @@ export default function CustomizedTimeline() {
   var m4 = new Date("6/4/2022").getTime();
   var closing = new Date("6/4/2022").getTime();
   var now = Date.now();
-  console.log(now);
-  console.log(registration);
-  console.log(m1);
-  console.log(m2);
-  console.log(m3);
-  console.log(m4);
-  console.log(closing);
+
   if(now >= registration && now < m1){
     regColor = activeColor;
   }

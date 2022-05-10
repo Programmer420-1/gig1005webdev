@@ -207,15 +207,16 @@ const Landing = () => {
             }
         });
 
-        //scroll detection
-        window.addEventListener("scroll", () => {
+        function handleScroll() {
             if (window.scrollY > 0) {
                 setIsScrolled(true);
             }
             else {
                 setIsScrolled(false);
             }
-        });
+        }
+        //scroll detection
+        window.addEventListener("scroll", handleScroll, true);
 
         // window resize events
         window.addEventListener('resize', (e) => {
@@ -311,6 +312,10 @@ const Landing = () => {
         timelineObserver.observe(test1Ref.current);
         test2Observer.observe(test2Ref.current);
         test3Observer.observe(test3Ref.current);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll, true);
+        };
     }, []);
 
     return (

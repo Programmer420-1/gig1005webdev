@@ -16,22 +16,18 @@ export const ModuleDetails = ({ details, qrcode, timetable, gForm }) => {
                         <p className='italic text-center px-5'>Register</p>
                     </a>
                     <div className='mb-4 md:mb-0 hidden md:block lg:mr-5' style={{ 'maxWidth': '150px' }}>
-                        <a href="#">
-                            <QRCode>
-                                <img className='w-full' src={'/assets/images/' + qrcode} />
-                            </QRCode>
-                                <DownloadText className='mt-2' href={gForm} target='_blank'>
-                                    Scan or Click to Register
-                                </DownloadText>
-                        
-
-                        </a>
+                        <QRCode>
+                            <img className='w-full' src={'/assets/images/' + qrcode} />
+                        </QRCode>
+                        <DownloadText className='mt-2' href={gForm} target='_blank'>
+                            Scan or Click to Register
+                        </DownloadText>
                     </div>
                 </div>
                 <div className='flex flex-col md:mt-10 mt-3 lg:mt-5'>
                     <p className='mb-2 text-xl font-semibold mt-4 md:mt-0'>Timetable</p>
-                    <Timetable className='grow mx-auto hover:scale-110 transition-transform'>
-                    <Link to={'/assets/timetable/' + timetable} target="_blank" >
+                    <Timetable className='grow mx-auto hover:scale-105 transition-transform'>
+                        <Link to={'/assets/timetable/' + timetable} target="_blank" >
                             <img className="timetable" src={'/assets/timetable/' + timetable} alt="module timetable"></img>
                         </Link>
                     </Timetable>
@@ -49,12 +45,12 @@ export const ModuleDetails = ({ details, qrcode, timetable, gForm }) => {
 
 const QRCode = styled.div`
     ${tw`mx-auto`}
-    width: 12vh;
+    width: 14vh;
     max-width: 135px;
 
 `
 const Timetable = styled.div`
-    max-width: 40vh;
+    max-width: 35vh;
 
     img{
         max-height:100%;

@@ -89,19 +89,15 @@ function MyGallery() {
 
     const [isScrolled, setIsScrolled] = useState(false);
 
-    useEffect(() => {
-        //scroll detection
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 0) {
-                setIsScrolled(true);
-                console.log("yay");
-            }
-            else {
-                setIsScrolled(false);
-                console.log("nay");
-            }
-        });
-    }, []);
+    function handleScroll(val) {
+        var div = document.getElementById("contentBox");
+        if (div.scrollTop > 0) {
+            setIsScrolled(true);
+        }
+        else {
+            setIsScrolled(false);
+        }
+    }
 
     // const openLightbox = useCallback((event, { photo, key }) => {
     //     setTempSrc(data[key - 1].src);
@@ -114,33 +110,33 @@ function MyGallery() {
     }
 
     return (
-        <>
-            <Wrap>
-                <NavBar isScrolled={isScrolled} />
 
-                <Container>
-                    <div className={model ? 'model open' : 'model'}>
-                        <img src={tempSrc} />
-                        <CloseIcon className="closeIcon" onClick={() => setModel(false)} />
-                        <a download="#" className='downloadIcon' ><DownloadIcon /></a>
-                    </div>
-                    <p className='text-white md:p-10 p-5 lg:pt-32 text-center uppercase text-2xl font-bold '>Gallery</p>
-                    {/* <PhotoAlbum layout="rows" photos={data} onClick={openLightbox} /> */}
-                    <Gallery>
-                        {data.map((item, index) => {
-                            return (
-                                <Pic key={index} onClick={() => getImg(item.src)}>
-                                    <img src={item.src} style={{ width: `100%`, display: 'block' }} />
+        <Wrap onScroll={handleScroll} id="contentBox">
+            <NavBar isScrolled={isScrolled} />
 
-                                </Pic>
-                            )
-                        })}
-                    </Gallery>
-                </Container>
+            <Container>
+                <div className={model ? 'model open' : 'model'}>
+                    <img src={tempSrc} />
+                    <CloseIcon className="closeIcon" onClick={() => setModel(false)} />
+                    <a download="#" className='downloadIcon' ><DownloadIcon /></a>
+                </div>
+                <p className='text-white md:p-10 p-5 lg:pt-32 text-center uppercase text-2xl font-bold '>Gallery</p>
+                {/* <PhotoAlbum layout="rows" photos={data} onClick={openLightbox} /> */}
+                <Gallery>
+                    {data.map((item, index) => {
+                        return (
+                            <Pic key={index} onClick={() => getImg(item.src)}>
+                                <img src={item.src} style={{ width: `100%`, display: 'block' }} />
 
-            </Wrap>
+                            </Pic>
+                        )
+                    })}
+                </Gallery>
+            </Container>
 
-        </>
+        </Wrap>
+
+
     );
 }
 

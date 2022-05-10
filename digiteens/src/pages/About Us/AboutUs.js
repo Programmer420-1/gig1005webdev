@@ -16,14 +16,32 @@ import { Pagination, Navigation } from "swiper";
 import NavBar from "../../commons/navbar";
 
 class AboutUs extends React.Component {
+  state = {
+    isScrolled : false
+  }
 
   constructor(props) {
     super(props);
-    this.state = { isScrolled: false };
   }
 
   componentDidMount() {
     window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        this.setState(state => ({
+          isScrolled: true
+        }));
+      }
+      else {
+        this.setState(state => ({
+          isScrolled: false
+        }));
+      }
+    });
+    
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", () => {
       if (window.scrollY > 0) {
         this.state.isScrolled = true;
       }
@@ -33,9 +51,9 @@ class AboutUs extends React.Component {
     });
   }
 
-  componentDidUpdate() {
-    this.render();
-  }
+  // componentDidUpdate() {
+  //   this.render();
+  // }
 
   render() {
     return (

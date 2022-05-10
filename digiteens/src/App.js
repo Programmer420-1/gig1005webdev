@@ -22,7 +22,6 @@ function App() {
     <Router>
       <div className="App hideScrollBar">
         <Routes>
-          {/* <Route exact path="/home" element={<Landing />} */}
           <Route exact path="/" element={<Landing />} />
           <Route exact path="/about%20us" element={<AboutUs />} />
           <Route exact path="/faq" element={<QnA />} />

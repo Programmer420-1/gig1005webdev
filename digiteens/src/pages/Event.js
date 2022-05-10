@@ -6,23 +6,21 @@ import { Tab, Tabs, TabPanel } from '../component/tabs';
 import { ModuleDetails } from '../component/moduleDetails';
 import NavBar from '../commons/navbar';
 
-function Event() {
+const Event = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    //scroll detection
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      }
-      else {
-        setIsScrolled(false);
-      }
-    });
-  }, []);
+  function handleScroll(val) {
+    var div = document.getElementById("contentBox");
+    if (div.scrollTop > 0) {
+      setIsScrolled(true);
+    }
+    else {
+      setIsScrolled(false);
+    }
+  }
 
   return (
-    <div className="snap-y snap-mandatory h-screen overflow-scroll overflow-x-hidden relative">
+    <div onScroll={handleScroll} id="contentBox" className="snap-y snap-mandatory h-screen overflow-scroll overflow-x-hidden relative">
       <>
         <NavBar isScrolled={isScrolled} />
         <div style={{ "minHeight": "100vh" }}>
@@ -38,7 +36,7 @@ function Event() {
   )
 }
 
-export default Event
+export default Event;
 
 function EventLanding() {
   return (
@@ -89,7 +87,7 @@ function Modules() {
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={3}>
           <ModuleDetails
-            details="Oh no! It's scam again! There's so many types of scam and online fraud nowadays and we know it's dangerous to use the technology without knowing how to protect yourself, so join us to know more!"            qrcode="digital security.png"
+            details="Oh no! It's scam again! There's so many types of scam and online fraud nowadays and we know it's dangerous to use the technology without knowing how to protect yourself, so join us to know more!" qrcode="digital security.png"
             timetable="digital security schedule.png"
             gForm="https://forms.gle/qM9f2TtFEmiXxNxa7"
           />
