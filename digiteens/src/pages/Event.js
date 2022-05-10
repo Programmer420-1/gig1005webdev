@@ -64,8 +64,8 @@ function Modules() {
     <>
       <TabsContainer>
         <Tabs selectedTab={activeTab} onChange={handleChange}>
-          <Tab key={1} label="D’Algorithmer" value={1}></Tab>
-          <Tab key={2} label="Shhh! Protect Your Rights" value={2}></Tab>
+          <Tab key={1} label="Shhh! Protect Your Rights" value={1}></Tab>
+          <Tab key={2} label="D’Algorithmer" value={2}></Tab>
           <Tab key={3} label="Scams & Swindles 101" value={3}></Tab>
           <Tab key={4} label="Tweet: Perception Changer" value={4}></Tab>
         </Tabs>

@@ -12,7 +12,7 @@ export const ModuleDetails = ({ details, qrcode, timetable, gForm }) => {
                         <p className='md:mb-2 mb-3 text-xl font-semibold'>Course Details</p>
                         <p className='mb-4 md:mb-0 text-slate-400'>{details}</p>
                     </div>
-                    <a className='md:hidden border-[#FFCB9B] mx-auto rounded border py-2 block cursor-pointer transition-all duration-200 hover:underline text-[#FFCB9B] hover:brightness-75' style={{ maxWidth: '150px' }}>
+                    <a href={gForm} target='_blank' className='md:hidden border-[#FFCB9B] mx-auto rounded border py-2 block cursor-pointer transition-all duration-200 hover:underline text-[#FFCB9B] hover:brightness-75' style={{ maxWidth: '150px' }}>
                         <p className='italic text-center px-5'>Register</p>
                     </a>
                     <div className='mb-4 md:mb-0 hidden md:block lg:mr-5' style={{ 'maxWidth': '150px' }}>
@@ -29,7 +29,7 @@ export const ModuleDetails = ({ details, qrcode, timetable, gForm }) => {
                     </div>
                 </div>
                 <div className='grow flex flex-col md:mt-10 mt-3 lg:mt-5'>
-                    <p className='mb-2 text-xl font-semibold mt-4 md:mt-0'>Time Table</p>
+                    <p className='mb-2 text-xl font-semibold mt-4 md:mt-0'>Timetable</p>
                     <Timetable className='grow mx-auto hover:scale-110 transition-transform'>
                     <Link to={'/assets/timetable/' + timetable} target="_blank" >
                             <img className="timetable" src={'/assets/timetable/' + timetable} alt="module timetable"></img>

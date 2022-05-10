@@ -105,7 +105,7 @@ export default function CustomizedTimeline() {
             <Typography variant="h6" component="span">
             Module 1
             </Typography>
-            <Typography>Digital Privacy</Typography>
+            <Typography>Digital Privacy - Shhh! Protect your rights.</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -127,7 +127,7 @@ export default function CustomizedTimeline() {
             <Typography variant="h6" component="span">
               Module 2
             </Typography>
-            <Typography>Digital Opportunities</Typography>
+            <Typography>Digital Opportunities - D’ALGORITHMER</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -149,7 +149,7 @@ export default function CustomizedTimeline() {
             <Typography variant="h6" component="span">
               Module 3
             </Typography>
-            <Typography>Digital Security</Typography>
+            <Typography>Digital Security - Scams And Swindles 101</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -171,7 +171,7 @@ export default function CustomizedTimeline() {
             <Typography variant="h6" component="span">
               Module 4
             </Typography>
-            <Typography>Digital Advocacy</Typography>
+            <Typography>Digital Advocacy - Tweet: Perception Changer</Typography>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
