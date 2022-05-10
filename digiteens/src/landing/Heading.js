@@ -49,7 +49,7 @@ const Heading = () => {
     return (
         <Container>
             <div class="random">
-                <div class="heading-content">
+                <div class="heading-content" style={{marginRight: 1 + 'rem'}} >
                     <span className="nbr ltr text-greenlight3">0</span>
                     <span className="nbr ltr text-greenlight3">0</span>
                     <span className="nbr ltr text-greenlight3">0</span>
@@ -62,7 +62,7 @@ const Heading = () => {
                     <span className="nbr ltr text-greenlight3">0</span>
                     <span className="nbr ltr text-greenlight3">0</span>
                 </div>
-                <div class="heading-content">
+                <div class="heading-content" style={{marginRight: 1 + 'rem'}} >
                     <span className="nbr ltr">0</span>
                     <span className="nbr ltr">0</span>
                     <span className="nbr ltr">0</span>

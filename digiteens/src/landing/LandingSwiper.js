@@ -16,19 +16,19 @@ const LandingSwiper = ({ vh }) => {
                 <SwiperSlide>
                     <SwipeContainer>
                         <AboutUsChat delay={0.75} content="Who are us?" isSender={true} />
-                        <AboutUsChat delay={0.75} content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel morbi sit magna arcu nullam. Aenean sapien sit turpis lorem" isSender={false} />
+                        <AboutUsChat delay={0.75} content="We are a group of year 1 Universiti Malaya students who are trying to promote the digitisation of our society." isSender={false} />
                     </SwipeContainer>
                 </SwiperSlide>
                 <SwiperSlide>
                     <SwipeContainer>
-                        <AboutUsChat delay={1.25} content="Who are us?" isSender={true} />
-                        <AboutUsChat delay={1.25} content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel morbi sit magna arcu nullam." isSender={false} />
+                        <AboutUsChat delay={1.25} content="What is this event about?" isSender={true} />
+                        <AboutUsChat delay={1.25} content="This event will expose you to the must-know information in this progressively digitalised world." isSender={false} />
                     </SwipeContainer>
                 </SwiperSlide>
                 <SwiperSlide>
                     <SwipeContainer>
-                        <AboutUsChat delay={1.75} content="Who are us?" isSender={true} />
-                        <AboutUsChat delay={1.75} content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel morbi sit magna arcu nullam. Aenean sapien sit turpis lorem.consectetur adipiscing elit. Vel morbi sit magna arcu nullam.consectetur adipiscing elit. Vel morbi sit magna arcu nullam" isSender={false} />
+                        <AboutUsChat delay={1.75} content="Who supported us in this event?" isSender={true} />
+                        <AboutUsChat delay={1.75} content="This event is launched successfully  with the support from Meta and UM Stem Centre." isSender={false} />
                     </SwipeContainer>
                 </SwiperSlide>
             </Swiper>

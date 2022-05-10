@@ -333,11 +333,11 @@ const Landing = () => {
                     : <AboutUs>
                         <div>
                             <Fade left><AboutUsChat delay={0.75} content="Who are us?" isSender={true} /></Fade>
-                            <Fade right><AboutUsChat delay={0.75} content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel morbi sit magna arcu nullam. Aenean sapien sit turpis lorem" isSender={false} /></Fade>
-                            <Fade left><AboutUsChat delay={1.25} content="Who are us?" isSender={true} /></Fade>
-                            <Fade right><AboutUsChat delay={1.25} content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel morbi sit magna arcu nullam." isSender={false} /></Fade>
-                            <Fade left><AboutUsChat delay={1.75} content="Who are us?" isSender={true} /></Fade>
-                            <Fade right><AboutUsChat delay={1.75} content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel morbi sit magna arcu nullam. Aenean sapien sit turpis lorem.consectetur adipiscing elit. Vel morbi sit magna arcu nullam.consectetur adipiscing elit. Vel morbi sit magna arcu nullam" isSender={false} /></Fade>
+                            <Fade right><AboutUsChat delay={0.75} content="We are a group of year 1 Universiti Malaya students who are trying to promote the digitisation of our society." isSender={false} /></Fade>
+                            <Fade left><AboutUsChat delay={1.25} content="What is this event about?" isSender={true} /></Fade>
+                            <Fade right><AboutUsChat delay={1.25} content="This event will expose you to the must-know information in this progressively digitalised world." isSender={false} /></Fade>
+                            <Fade left><AboutUsChat delay={1.75} content="Who supported us in this event?" isSender={true} /></Fade>
+                            <Fade right><AboutUsChat delay={1.75} content="This event is launched successfully  with the support from Meta and UM Stem Centre." isSender={false} /></Fade>
                         </div>
                     </AboutUs>}
             </section>
