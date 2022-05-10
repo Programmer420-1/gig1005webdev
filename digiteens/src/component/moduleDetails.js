@@ -28,7 +28,7 @@ export const ModuleDetails = ({ details, qrcode, timetable, gForm }) => {
                         </a>
                     </div>
                 </div>
-                <div className='grow flex flex-col md:mt-10 mt-3 lg:mt-5'>
+                <div className='flex flex-col md:mt-10 mt-3 lg:mt-5'>
                     <p className='mb-2 text-xl font-semibold mt-4 md:mt-0'>Timetable</p>
                     <Timetable className='grow mx-auto hover:scale-110 transition-transform'>
                     <Link to={'/assets/timetable/' + timetable} target="_blank" >
@@ -49,11 +49,16 @@ export const ModuleDetails = ({ details, qrcode, timetable, gForm }) => {
 
 const QRCode = styled.div`
     ${tw`mx-auto`}
-    width: 150px;
+    width: 12vh;
+    max-width: 135px;
 
 `
 const Timetable = styled.div`
-    max-height: 100%;
+    max-width: 40vh;
+
+    img{
+        max-height:100%;
+    }
 `
 
 const DownloadText = styled.a`
