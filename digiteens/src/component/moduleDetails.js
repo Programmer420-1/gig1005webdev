@@ -6,8 +6,8 @@ export const ModuleDetails = ({ details, qrcode, timetable, gForm }) => {
 
     return (
         <div className='grow'>
-            <div className="mx-5 lg:mx-32 flex justify-between flex-col h-full">
-                <div className='flex flex-col md:flex-row md:justify-between md:items-center'>
+            <div className="mx-5 lg:mx-32 flex justify-around flex-col h-full">
+                <div className='flex flex-col md:flex-row md:justify-around md:items-center'>
                     <div className='md:text-left' style={{ 'maxWidth': '800px' }}>
                         <p className='md:mb-2 mb-3 text-xl font-semibold'>Course Details</p>
                         <p className='mb-4 md:mb-0 text-slate-400'>{details}</p>
