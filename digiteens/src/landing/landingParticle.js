@@ -17,7 +17,7 @@ const LandingParticle = () => {
       options={{
         background: {
           color: {
-            value: "#0A2729",
+            value: "transparent",
           },
         },
         fpsLimit: 120,

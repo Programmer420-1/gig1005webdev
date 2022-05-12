@@ -350,12 +350,12 @@ const Landing = () => {
 
                 <LinearTimeline />
                 <TimelineDots>
-                    <EventPopUp name="Registration" date="09/05/2022" index="1" />
-                    <EventPopUp name="Module 1" date="14/05/2022" index="2" />
-                    <EventPopUp name="Module 2" date="21/05/2022" index="3" />
-                    <EventPopUp name="Module 3" date="28/05/2022" index="4" />
-                    <EventPopUp name="Module 4" date="04/06/2022" index="5" />
-                    <EventPopUp name="Closing Ceremony" date="04/06/2022" index="6" />
+                    <EventPopUp name="Registration" date="16/05/2022" index="1" />
+                    <EventPopUp name="Module 1" date="21/05/2022" index="2" />
+                    <EventPopUp name="Module 2" date="28/05/2022" index="3" />
+                    <EventPopUp name="Module 3" date="04/05/2022" index="4" />
+                    <EventPopUp name="Module 4" date="11/06/2022" index="5" />
+                    <EventPopUp name="Closing Ceremony" date="11/06/2022" index="6" />
                 </TimelineDots>
             </section>
             <section ref={test2Ref} className="section3 snap-start snap-always">

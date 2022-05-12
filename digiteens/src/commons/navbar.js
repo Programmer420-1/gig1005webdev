@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { FaBars } from 'react-icons/fa'
 import { IoClose } from 'react-icons/io5'
 import DropDown from './DropDown'
-
+import Logo from "../commons/Logo"
 
 const NavBar = ({ isScrolled }) => {
     // track menu is pressed
@@ -21,12 +21,14 @@ const NavBar = ({ isScrolled }) => {
                 setIsOpen(!isOpen);
             }} />}
             <NavList isScrolled={isScrolled}>
+                <Logo />
                 <NavItem pageName="Home" />
                 <NavItem pageName="Event" />
                 {/* <NavItem pageName="Leaderboard" /> */}
-            <NavItem pageName="Gallery" />
+                {/* <NavItem pageName="Gallery" /> */}
                 <NavItem pageName="FAQ" />
                 <NavItem pageName="About us" />
+                <NavItem pageName="Department Photo" />
             </NavList>
         </>
 
@@ -76,10 +78,11 @@ const CloseButton = styled(IoClose)`
 `
 
 const NavList = styled.div`
-    width : 75vw;
-    padding : 50px 0 0 30px;
+    width : 70vw;
+    padding : 25px 0 0 30px;
     display: flex;
     justify-content : space-evenly;
+    align-items: center;
     color: white;
     letter-spacing : 5px;
     font-size : 0.9rem;

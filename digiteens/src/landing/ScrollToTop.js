@@ -3,9 +3,9 @@ import styled from 'styled-components'
 import { FaArrowAltCircleUp } from 'react-icons/fa'
 
 
-const ScrollToTop = ({ isScrolled }) => {
+const ScrollToTop = ({ isScrolled, onClick }) => {
     return (
-        <Container isScrolled={isScrolled}><FaArrowAltCircleUp size={38} /></Container>
+        <Container isScrolled={isScrolled} onClick={onClick}><FaArrowAltCircleUp size={38} /></Container>
     )
 }
 
@@ -20,7 +20,6 @@ const Container = styled.div`
     opacity: 0.3;
     transform: ${props => props.isScrolled ? "rotate(0deg)" : "rotate(180deg)"};
     
-
     &:hover{
         color: #ffffff;
         opacity: 1;

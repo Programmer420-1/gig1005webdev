@@ -1,164 +1,179 @@
-import React, { useState, useCallback, useEffect } from 'react'
+import React, { useState, useCallback, useEffect } from "react";
 import PhotoAlbum from "react-photo-album";
-import tw, { styled } from 'twin.macro'
-import '../css/App.css';
-import CloseIcon from '@mui/icons-material/Close';
-import DownloadIcon from '@mui/icons-material/Download';
-import { Container } from '@mui/material';
-import NavBar from '../commons/navbar';
+import tw, { styled } from "twin.macro";
+import "../css/App.css";
+import CloseIcon from "@mui/icons-material/Close";
+import DownloadIcon from "@mui/icons-material/Download";
+import { Container } from "@mui/material";
+import NavBar from "../commons/navbar";
+import LandingParticle from "../landing/landingParticle";
 
 const data = [
-    {
-        key: 1,
-        src: "/assets/images/image2.jpg",
-        width: 1350,
-        height: 900
-    },
-    {
-        key: 2,
-        src: "/assets/images/image1.jpg",
-        width: 900,
-        height: 1350
-    },
-    {
-        key: 3,
-        src: "/assets/images/image3.jpg",
-        width: 3021,
-        height: 4028
-    },
-    {
-        key: 4,
-        src: "/assets/images/image4.jpg",
-        width: 3568,
-        height: 4758
-    },
-    {
-        key: 5,
-        src: "/assets/images/image5.jpg",
-        width: 3955,
-        height: 5932
-    },
-    {
-        key: 6,
-        src: "/assets/images/image6.jpg",
-        width: 4624,
-        height: 3468
-    }
+  {
+    key: 1,
+    src: "/assets/images/image2.jpg",
+    width: 1350,
+    height: 900,
+  },
+  {
+    key: 2,
+    src: "/assets/images/image1.jpg",
+    width: 900,
+    height: 1350,
+  },
+  {
+    key: 3,
+    src: "/assets/images/image3.jpg",
+    width: 3021,
+    height: 4028,
+  },
+  {
+    key: 4,
+    src: "/assets/images/image4.jpg",
+    width: 3568,
+    height: 4758,
+  },
+  {
+    key: 5,
+    src: "/assets/images/image5.jpg",
+    width: 3955,
+    height: 5932,
+  },
+  {
+    key: 6,
+    src: "/assets/images/image6.jpg",
+    width: 4624,
+    height: 3468,
+  },
 ];
 
-
 function MyGallery() {
-    // const [currentImage, setCurrentImage] = useState(0);
-    // const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-    // const openLightbox = useCallback((event, {photo, index}) =>{
-    //     setCurrentImage(index);
-    //     setViewerIsOpen(true);
-    // })
-
-    // const closeLightbox = () =>{
-    //     setCurrentImage(0);
-    //     setViewerIsOpen(false);
-    // }
-
-    // return (
-    //     <Wrap>
-    //     <p className='text-white md:p-10 p-5 uppercase text-2xl'>Gallery</p>
-    //     <div className='px-20'>
-    //     <PhotoAlbum layout="rows" photos={photos} onClick={openLightbox}/>
-    //     {/* <ModalGateway> */}
-    //         {viewerIsOpen?(
-    //             // <Modal onClose={closeLightbox}>
-    //                 <Carousel
-    //           currentIndex={currentImage}
-    //           views={photos.map(x => ({
-    //             ...x,
-    //             srcset: x.srcSet,
-    //             caption: x.title
-    //           }))}
-    //         />
-    //             // </Modal>
-    //         ) : null}
-    //     {/* </ModalGateway> */}
-
-    //     </div>
-    //     </Wrap>
-    // )
-    const [model, setModel] = useState(false);
-    const [tempSrc, setTempSrc] = useState('');
-
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    function handleScroll(val) {
-        var div = document.getElementById("contentBox");
-        if (div.scrollTop > 0) {
-            setIsScrolled(true);
-        }
-        else {
-            setIsScrolled(false);
-        }
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
     }
+    //scroll detection
+    window.addEventListener("scroll", handleScroll, true);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll, true);
+    };
+  }, []);
+  // const [currentImage, setCurrentImage] = useState(0);
+  // const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-    // const openLightbox = useCallback((event, { photo, key }) => {
-    //     setTempSrc(data[key - 1].src);
-    //     setModel(true);
-    // })
+  // const openLightbox = useCallback((event, {photo, index}) =>{
+  //     setCurrentImage(index);
+  //     setViewerIsOpen(true);
+  // })
 
-    const getImg = (src) => {
-        setTempSrc(src);
-        setModel(true);
-    }
+  // const closeLightbox = () =>{
+  //     setCurrentImage(0);
+  //     setViewerIsOpen(false);
+  // }
 
-    return (
+  // return (
+  //     <Wrap>
+  //     <p className='text-white md:p-10 p-5 uppercase text-2xl'>Gallery</p>
+  //     <div className='px-20'>
+  //     <PhotoAlbum layout="rows" photos={photos} onClick={openLightbox}/>
+  //     {/* <ModalGateway> */}
+  //         {viewerIsOpen?(
+  //             // <Modal onClose={closeLightbox}>
+  //                 <Carousel
+  //           currentIndex={currentImage}
+  //           views={photos.map(x => ({
+  //             ...x,
+  //             srcset: x.srcSet,
+  //             caption: x.title
+  //           }))}
+  //         />
+  //             // </Modal>
+  //         ) : null}
+  //     {/* </ModalGateway> */}
 
-        <Wrap onScroll={handleScroll} id="contentBox">
-            <NavBar isScrolled={isScrolled} />
+  //     </div>
+  //     </Wrap>
+  // )
+  const [model, setModel] = useState(false);
+  const [tempSrc, setTempSrc] = useState("");
 
-            <Container>
-                <div className={model ? 'model open' : 'model'}>
-                    <img src={tempSrc} />
-                    <CloseIcon className="closeIcon" onClick={() => setModel(false)} />
-                    <a download="#" className='downloadIcon' ><DownloadIcon /></a>
-                </div>
-                <p className='text-white md:p-10 p-5 lg:pt-32 text-center uppercase text-2xl font-bold '>Gallery</p>
-                {/* <PhotoAlbum layout="rows" photos={data} onClick={openLightbox} /> */}
-                <Gallery>
-                    {data.map((item, index) => {
-                        return (
-                            <Pic key={index} onClick={() => getImg(item.src)}>
-                                <img src={item.src} style={{ width: `100%`, display: 'block' }} />
+  const [isScrolled, setIsScrolled] = useState(false);
 
-                            </Pic>
-                        )
-                    })}
-                </Gallery>
-            </Container>
+  // const openLightbox = useCallback((event, { photo, key }) => {
+  //     setTempSrc(data[key - 1].src);
+  //     setModel(true);
+  // })
 
-        </Wrap>
+  const getImg = (src) => {
+    setTempSrc(src);
+    setModel(true);
+  };
 
-
-    );
+  return (
+    <Wrap>
+      <LandingParticle
+        style={{
+          position: "fixed",
+          top: "0",
+          left: "0",
+          width: "100vw",
+          height: "100vh",
+        }}
+      />
+      <NavBar isScrolled={isScrolled} />
+      <Container>
+        <div className={model ? "model open" : "model"}>
+          <img src={tempSrc} />
+          <CloseIcon className="closeIcon" onClick={() => setModel(false)} />
+          <a download="#" className="downloadIcon">
+            <DownloadIcon />
+          </a>
+        </div>
+        <p className="text-white md:p-10 p-5 lg:pt-32 text-center uppercase text-2xl font-bold ">
+          Gallery
+        </p>
+        {/* <PhotoAlbum layout="rows" photos={data} onClick={openLightbox} /> */}
+        <Gallery>
+          {data.map((item, index) => {
+            return (
+              <Pic key={index} onClick={() => getImg(item.src)}>
+                <img
+                  src={item.src}
+                  style={{ width: `100%`, display: "block" }}
+                  alt="photo"
+                />
+              </Pic>
+            );
+          })}
+        </Gallery>
+      </Container>
+    </Wrap>
+  );
 }
 
-export default MyGallery
+export default MyGallery;
 
 const Wrap = styled.div`
-    // ${tw`pt-5 px-5 md:px-10`}
-    background-color: #0A2729;
-    min-height: 100%;
-`
+  // ${tw`pt-5 px-5 md:px-10`}
+  background-color: #0a2729;
+  min-height: 100%;
+`;
 
 const Gallery = styled.div`
-    ${tw`grid gap-4 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 px-20`}
-`
+  ${tw`grid gap-4 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 px-20`}
+`;
 const Pic = styled.div`
-    // position: relative;
-    transition: all 350ms ease;
-    cursor: pointer;
-    margin-bottom: 12px;
-
-    &:hover{
-        filter: opacity(0.8);
-    }
-
-`
+  transition: all 350ms ease;
+  cursor: pointer;
+  margin-bottom: 12px;
+  z-index: 10;
+  &:hover {
+    filter: opacity(0.8);
+  }
+`;

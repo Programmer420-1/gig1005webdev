@@ -14,6 +14,7 @@ import { AboutUs } from "./pages/About Us/AboutUs";
 import React from "react";
 import Event from './pages/Event';
 import MyGallery from './pages/Gallery';
+import CommitteeGallery from './pages/CommitteeGallery';
 import QnA from './pages/QnA';
 import Leaderboard from "./pages/Leaderboard";
 
@@ -28,6 +29,7 @@ function App() {
           <Route exact path="/gallery" element={<MyGallery />} />
           <Route exact path="/event" element={<Event />} />
           <Route exact path="/leaderboard" element={<Leaderboard />} />
+          <Route exact path="/department%20photo" element={<CommitteeGallery />} />
         </Routes>
       </div>
     </Router>

@@ -27,12 +27,12 @@ export default function CustomizedTimeline() {
   var m4Color = normColor;
   var closingColor = normColor;
 
-  var registration = new Date("5/9/2022").getTime();
-  var m1 = new Date("5/14/2022").getTime();
-  var m2 = new Date("5/21/2022").getTime();
-  var m3 = new Date("5/28/2022").getTime();
-  var m4 = new Date("6/4/2022").getTime();
-  var closing = new Date("6/4/2022").getTime();
+  var registration = new Date("5/16/2022").getTime();
+  var m1 = new Date("5/21/2022").getTime();
+  var m2 = new Date("5/28/2022").getTime();
+  var m3 = new Date("6/4/2022").getTime();
+  var m4 = new Date("6/11/2022").getTime();
+  var closing = new Date("6/11/2022").getTime();
   var now = Date.now();
 
   if(now >= registration && now < m1){
@@ -64,7 +64,7 @@ export default function CustomizedTimeline() {
             variant="body2"
             color="#ffffff"
           >
-            09/05/2022
+            16/05/2022
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
@@ -86,7 +86,7 @@ export default function CustomizedTimeline() {
             variant="body2"
             color="#ffffff"
           >
-            14/05/2022
+            21/05/2022
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
@@ -108,7 +108,7 @@ export default function CustomizedTimeline() {
             variant="body2"
             color="#ffffff"
           >
-            21/05/2022
+            28/05/2022
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
@@ -130,7 +130,7 @@ export default function CustomizedTimeline() {
             variant="body2"
             color="#ffffff"
           >
-            28/05/2022
+            04/06/2022
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
@@ -152,7 +152,7 @@ export default function CustomizedTimeline() {
             variant="body2"
             color="#ffffff"
           >
-            04/06/2022
+            11/06/2022
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
@@ -174,7 +174,7 @@ export default function CustomizedTimeline() {
             variant="body2"
             color="#ffffff"
           >
-            04/06/2022
+            11/06/2022
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
