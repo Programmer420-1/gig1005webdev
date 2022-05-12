@@ -17,8 +17,8 @@ import NavBar from "../../commons/navbar";
 
 class AboutUs extends React.Component {
   state = {
-    isScrolled : false
-  }
+    isScrolled: false,
+  };
 
   constructor(props) {
     super(props);
@@ -27,25 +27,22 @@ class AboutUs extends React.Component {
   componentDidMount() {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {
-        this.setState(state => ({
-          isScrolled: true
+        this.setState((state) => ({
+          isScrolled: true,
         }));
-      }
-      else {
-        this.setState(state => ({
-          isScrolled: false
+      } else {
+        this.setState((state) => ({
+          isScrolled: false,
         }));
       }
     });
-    
   }
 
   componentWillUnmount() {
     window.removeEventListener("scroll", () => {
       if (window.scrollY > 0) {
         this.state.isScrolled = true;
-      }
-      else {
+      } else {
         this.state.isScrolled = false;
       }
     });
@@ -239,18 +236,18 @@ class HoriMenu extends React.Component {
               <div className="leftText">
                 Zi Wei <br />
                 Asraf <br />
-                    <br />
+                <br />
               </div>
               <div className="rightText">
                 Irdina <br />
-                    <br />
-                    <br />
+                <br />
+                <br />
               </div>
               <div className="line"></div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <h1 className="slide-Title">Module.D 1</h1>
+            <h1 className="slide-Title">Digital Privacy</h1>
             <div className="width">
               Nurin Farhanah <br />
               <div className="HOD">
@@ -259,18 +256,18 @@ class HoriMenu extends React.Component {
               <div className="leftText">
                 Aizat <br />
                 Syakirah <br />
-                    <br />
+                <br />
               </div>
               <div className="rightText">
                 Fareez <br />
-                    <br />
-                    <br />
+                <br />
+                <br />
               </div>
               <div className="line"></div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <h1 className="slide-Title">Module.D 2</h1>
+            <h1 className="slide-Title">Digital Opportunity</h1>
             <div className="width">
               Atiqah Miza <br />
               <div className="HOD">
@@ -279,18 +276,18 @@ class HoriMenu extends React.Component {
               <div className="leftText">
                 Adriana <br />
                 Arina <br />
-                    <br />
+                <br />
               </div>
               <div className="rightText">
                 Norshafiqah <br />
-                    <br />
-                    <br />
+                <br />
+                <br />
               </div>
               <div className="line"></div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <h1 className="slide-Title">Module.D 3</h1>
+            <h1 className="slide-Title">Digital Security</h1>
             <div className="width">
               Nur Damia <br />
               <div className="HOD">
@@ -299,18 +296,18 @@ class HoriMenu extends React.Component {
               <div className="leftText">
                 Izyan <br />
                 Sahira <br />
-                    <br />
+                <br />
               </div>
               <div className="rightText">
                 Thayananth <br />
-                    <br />
-                    <br />
+                <br />
+                <br />
               </div>
               <div className="line"></div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <h1 className="slide-Title">Module.D 4</h1>
+            <h1 className="slide-Title">Digital Advocacy</h1>
             <div className="width">
               Linzan Liu <br />
               <div className="HOD">
@@ -319,12 +316,12 @@ class HoriMenu extends React.Component {
               <div className="leftText">
                 Hon Ting <br />
                 Jia Hui <br />
-                    <br />
+                <br />
               </div>
               <div className="rightText">
                 Yan Jian <br />
-                    <br />
-                    <br />
+                <br />
+                <br />
               </div>
               <div className="line"></div>
             </div>
@@ -334,7 +331,7 @@ class HoriMenu extends React.Component {
             <div className="width">
               Mentor <br />
               <div className="HOD">
-                Group 1 <br />
+                Digital Privacy <br />
               </div>
               <div className="leftText">
                 YuHao <br />
@@ -354,7 +351,7 @@ class HoriMenu extends React.Component {
             <div className="width">
               Mentor <br />
               <div className="HOD">
-                Group 2 <br />
+                Digital Opportunity <br />
               </div>
               <div className="leftText">
                 Yun Onn <br />
@@ -364,7 +361,7 @@ class HoriMenu extends React.Component {
               <div className="rightText">
                 Qian Xuan <br />
                 Fazreilie <br />
-                    <br />
+                <br />
               </div>
               <div className="line"></div>
             </div>
@@ -374,7 +371,7 @@ class HoriMenu extends React.Component {
             <div className="width">
               Mentor <br />
               <div className="HOD">
-                Group 3 <br />
+                Digital Security <br />
               </div>
               <div className="leftText">
                 Hakimi <br />
@@ -384,7 +381,7 @@ class HoriMenu extends React.Component {
               <div className="rightText">
                 Ching Yen <br />
                 Qiao Fang <br />
-                    <br />
+                <br />
               </div>
               <div className="line"></div>
             </div>
@@ -394,7 +391,7 @@ class HoriMenu extends React.Component {
             <div className="width">
               Mentor <br />
               <div className="HOD">
-                Group 4 <br />
+                Digital Advocacy <br />
               </div>
               <div className="leftText">
                 Firdaus <br />
@@ -404,7 +401,7 @@ class HoriMenu extends React.Component {
               <div className="rightText">
                 Eusoff <br />
                 Jia Wen <br />
-                    <br />
+                <br />
               </div>
               <div className="line"></div>
             </div>
