@@ -182,7 +182,7 @@ function Tiktok() {
                         transition-all duration-200 rounded"
               >
                 <div className="text-xxs text-[#106466] font-semibold group-hover:text-white delay-100 md:px-10 md:py-1">
-                  Join!
+                  <a target="_blank" href="#">Join!</a>
                 </div>
               </a>
             </div>

@@ -1,47 +1,74 @@
-import React, { useState, useCallback, useEffect } from "react";
-import PhotoAlbum from "react-photo-album";
+import React, { useState, useEffect } from "react";
 import tw, { styled } from "twin.macro";
 import "../css/App.css";
-import CloseIcon from "@mui/icons-material/Close";
-import DownloadIcon from "@mui/icons-material/Download";
 import { Container } from "@mui/material";
 import NavBar from "../commons/navbar";
 import LandingParticle from "../landing/landingParticle";
 import Fade from "react-reveal/Fade";
-import { fontFamily } from "@mui/system";
 import ScrollToTop from '../landing/ScrollToTop'
 
 const data = [
   {
     key: 1,
     src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Mock Department 1",
+    departmentName: "Director",
   },
   {
     key: 2,
     src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Mock Department 2",
+    departmentName: "Co-director",
   },
   {
     key: 3,
     src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Mock Department 3",
+    departmentName: "Secretary",
   },
   {
     key: 4,
     src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Mock Department 4",
+    departmentName: "Treasurer",
   },
   {
     key: 5,
     src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Mock Department 5",
+    departmentName: "Department of Publicity",
   },
   {
     key: 6,
     src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Mock Department 6",
+    departmentName: "Department of Multimedia",
   },
+  {
+    key: 7,
+    src: "/assets/images/groupPhoto.jpg",
+    departmentName: "Department of Module Development",
+  },
+  {
+    key: 8,
+    src: "/assets/images/groupPhoto.jpg",
+    departmentName: "Mentors",
+  },
+  {
+    key: 9,
+    src: "/assets/images/groupPhoto.jpg",
+    departmentName: "Module 1: Digital Privacy",
+  },
+  {
+    key: 10,
+    src: "/assets/images/groupPhoto.jpg",
+    departmentName: "Module 2: Digital Opportunity",
+  },
+  {
+    key: 11,
+    src: "/assets/images/groupPhoto.jpg",
+    departmentName: "Module 3: Digital Security",
+  },
+  {
+    key: 12,
+    src: "/assets/images/groupPhoto.jpg",
+    departmentName: "Module 4: Digital Advocacy",
+  },
+
 ];
 
 const ImageCard = ({ imageSrc, departmentName, index }) => {
@@ -69,7 +96,6 @@ const ImageCard = ({ imageSrc, departmentName, index }) => {
 
 function CommitteeGallery() {
   const [isScrolled, setIsScrolled] = useState(false);
-  var toTop = document.querySelector('.toTop');
 
   useEffect(() => {
     function handleScroll() {
@@ -89,7 +115,6 @@ function CommitteeGallery() {
   }, []);
 
   function scrollToTop() {
-      console.log("Hi");
     if (window.scrollY > 0) {
       window.scrollTo({
         top: 0,
@@ -163,7 +188,6 @@ const Gallery = styled.div`
 const Pic = styled.div`
   background-color: transparent;
   transition: all 350ms ease;
-  cursor: pointer;
   margin-bottom: 12px;
   z-index: 9999;
   &:hover {
