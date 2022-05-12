@@ -4,18 +4,15 @@
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
-
+  text-align: left;
+  font-family: "Amiko";
+  font-style: normal;
   /*
    Introduced in Internet Explorer 10.
    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
  */
   -ms-user-select: none;
   user-select: none;
-}
-root {
-  text-align: left;
-  font-family: "Amiko";
-  font-style: normal;
 }
 
 .App {
@@ -140,7 +137,7 @@ root {
 }
 
 .upStar {
-  background-image:url(../../public/assets/images/UpStar.png);
+  background-image: url(../../public/assets/images/UpStar.png);
 
   position: absolute;
   opacity: 0.8;
@@ -219,7 +216,7 @@ root {
   top: -3.6vw;
   overflow: visible;
 
-  font-family: "Inter";
+  font-family: "Amiko";
   font-style: normal;
   font-weight: 600;
   font-size: 2vw;
