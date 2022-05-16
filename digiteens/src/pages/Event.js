@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import EventSection from "../component/EventSection";
 import ReactTypingEffect from "react-typing-effect";
 import { styled } from "twin.macro";
@@ -84,6 +84,8 @@ function Modules() {
             qrcode="digital privacy.png"
             timetable="digital privacy schedule.png"
             gForm="https://forms.gle/993yy2HWGsSx3ye27"
+            mindmap="mindmap_DigitalPrivacy.png"
+            infographic="infographic_DigitalPrivacy.png"
           />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={2}>
@@ -92,6 +94,8 @@ function Modules() {
             qrcode="digital opportunities.png"
             timetable="digital opportunity schedule.png"
             gForm="https://forms.gle/8noKVwPN4bs9SBrE6"
+            mindmap="mindmap_DigitalOpportunity.png"
+            infographic="infographic_DigitalOpportunity.png"
           />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={3}>
@@ -100,6 +104,8 @@ function Modules() {
             qrcode="digital security.png"
             timetable="digital security schedule.png"
             gForm="https://forms.gle/qM9f2TtFEmiXxNxa7"
+            mindmap="mindmap_DigitalSecurity.png"
+            infographic="infographic_DigitalSecurity.png"
           />
         </TabPanel>
         <TabPanel value={activeTab} selectedIndex={4}>
@@ -108,6 +114,8 @@ function Modules() {
             qrcode="digital advocacy.png"
             timetable="digital advocacy schedule.png"
             gForm="https://forms.gle/3YhPYPP4gqoMdDje6"
+            mindmap="mindmap_DigitalAdvocacy.png"
+            infographic="infographic_DigitalAdvocacy.png"
           />
         </TabPanel>
       </TabsContainer>
