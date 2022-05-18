@@ -80,7 +80,7 @@ function Modules() {
       <TabsContainer className="h-4/5 grow">
         <TabPanel value={activeTab} selectedIndex={1}>
           <ModuleDetails
-            details="Algorithm, what is it? Join us to get the answer! You will have the opportunity to learn how algorithm is applied in our daily life and have a chance to design your own one."
+            details="Rights? Right! Privacy rights is important and you will know why by joining this event! You will also know more about malicious software so you can proctect yourself better."
             qrcode="digital privacy.png"
             timetable="digital privacy schedule.png"
             gForm="https://forms.gle/993yy2HWGsSx3ye27"
@@ -88,9 +88,10 @@ function Modules() {
             infographic="infographic_DigitalPrivacy.png"
           />
         </TabPanel>
+        
         <TabPanel value={activeTab} selectedIndex={2}>
           <ModuleDetails
-            details="Rights? Right! Privacy rights is important and you will know why by joining this event! You will also know more about malicious software so you can proctect yourself better."
+            details="Algorithm, what is it? Join us to get the answer! You will have the opportunity to learn how algorithm is applied in our daily life and have a chance to design your own one."
             qrcode="digital opportunities.png"
             timetable="digital opportunity schedule.png"
             gForm="https://forms.gle/8noKVwPN4bs9SBrE6"
@@ -114,7 +115,7 @@ function Modules() {
             qrcode="digital advocacy.png"
             timetable="digital advocacy schedule.png"
             gForm="https://forms.gle/3YhPYPP4gqoMdDje6"
-            mindmap="mindmap_DigitalAdvocacy.png"
+            mindmap=""
             infographic="infographic_DigitalAdvocacy.png"
           />
         </TabPanel>
@@ -190,7 +191,7 @@ function Tiktok() {
                         transition-all duration-200 rounded"
               >
                 <div className="text-xxs text-[#106466] font-semibold group-hover:text-white delay-100 md:px-10 md:py-1">
-                  <a target="_blank" href="#">Join!</a>
+                  <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfcIGoUDZMX2hUWzoNl4mZaovZW_fzOfSBPV7HV5S8L6o22zw/viewform">Join!</a>
                 </div>
               </a>
             </div>

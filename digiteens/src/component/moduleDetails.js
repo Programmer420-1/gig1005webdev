@@ -49,7 +49,7 @@ export const ModuleDetails = ({ details, qrcode, timetable, gForm, mindmap, info
               </DownloadText>
             </Link>
           </div>
-
+          {/* {{if mind}} */}
           <div>
             <p className="mb-2 text-xl font-semibold mt-4 md:mt-0">Mindmap</p>
             <Timetable className="grow mx-auto hover:scale-105 transition-transform">
