@@ -7,6 +7,7 @@ import DownloadIcon from "@mui/icons-material/Download";
 import { Container } from "@mui/material";
 import NavBar from "../commons/navbar";
 import LandingParticle from "../landing/landingParticle";
+import ScrollToTop from "../landing/ScrollToTop";
 
 const data = [
   {
@@ -64,6 +65,20 @@ function MyGallery() {
       window.removeEventListener("scroll", handleScroll, true);
     };
   }, []);
+
+  function scrollToTop() {
+    if (window.scrollY > 0) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth",
+      });
+    }
+  }
   // const [currentImage, setCurrentImage] = useState(0);
   // const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
@@ -153,6 +168,7 @@ function MyGallery() {
           })}
         </Gallery>
       </Container>
+      <ScrollToTop isScrolled={isScrolled} onClick={scrollToTop}/>
     </Wrap>
   );
 }

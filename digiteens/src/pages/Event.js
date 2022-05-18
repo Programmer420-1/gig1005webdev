@@ -5,6 +5,7 @@ import { styled } from "twin.macro";
 import { Tab, Tabs, TabPanel } from "../component/tabs";
 import { ModuleDetails } from "../component/moduleDetails";
 import NavBar from "../commons/navbar";
+import ScrollToTop from "../landing/ScrollToTop";
 
 const Event = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,6 +16,21 @@ const Event = () => {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
+    }
+  }
+
+  function scrollToTop() {
+    var div = document.getElementById("contentBox");
+    if (div.scrollTop > 0) {
+      div.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      div.scrollTo({
+        top: div.scrollHeight,
+        behavior: "smooth",
+      });
     }
   }
 
@@ -40,6 +56,7 @@ const Event = () => {
         backgroundImg="testing.jpg"
         contentComp={Tiktok()}
       />
+      <ScrollToTop isScrolled={isScrolled} onClick={scrollToTop} />
     </div>
   );
 };
