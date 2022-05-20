@@ -97,7 +97,7 @@ function Modules() {
       <TabsContainer className="h-4/5 grow">
         <TabPanel value={activeTab} selectedIndex={1}>
           <ModuleDetails
-            details="Rights? Right! Privacy rights is important and you will know why by joining this event! You will also know more about malicious software so you can proctect yourself better."
+            details="Rights? Right! Privacy rights is important and you will know why by joining this event! You will also know more about malicious software so you can protect yourself better."
             qrcode="digital privacy.png"
             timetable="digital privacy schedule.png"
             gForm="https://forms.gle/993yy2HWGsSx3ye27"
@@ -132,7 +132,7 @@ function Modules() {
             qrcode="digital advocacy.png"
             timetable="digital advocacy schedule.png"
             gForm="https://forms.gle/3YhPYPP4gqoMdDje6"
-            mindmap=""
+            mindmap="mindmap_DigitalAdvocacy.png"
             infographic="infographic_DigitalAdvocacy.png"
           />
         </TabPanel>
