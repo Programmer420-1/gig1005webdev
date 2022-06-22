@@ -47,7 +47,7 @@ function Leaderboard() {
     <div style={{ backgroundColor: "black" }}>
       <Wrapper>
         <NavBar />
-        <p className="font-bold text-3xl text-center md:pt-32 pt-5 lg:pt-32">
+        <p className="font-bold text-3xl text-center md:pt-16 pt-5 lg:pt-32">
           Leaderboard
         </p>
         <LeaderboardDropdown selected={selected} setSelected={setSelected} />
@@ -67,7 +67,7 @@ function Leaderboard() {
           </Rows>
         ) : (
           <div className="relative h-full mt-10">
-            <div className="grid md:grid-cols-3 grid-cols-1 mx-auto md:fixed inset-x-0 lg:bottom-10 bottom-24 px-3 lg:px-24">
+            <div className="grid md:grid-cols-3 grid-cols-1 mx-auto md:fixed inset-x-0 lg:bottom-2 bottom-24 px-3 lg:px-24">
               <PodiumDiv className="md:order-2 md:relative md:bottom-36">
                 <PodiumImg bgImage={data[selected][0]["url"]}></PodiumImg>
                 <div
@@ -140,8 +140,8 @@ const PodiumDiv = styled.div``;
 const Rows = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 0px 10px;
-  margin-top: 150px;
+  margin: 0px 5%;
+  margin-top: 5%;
   justify-content: center;
   align-items: flex-end;
 
