@@ -232,13 +232,13 @@
   width: 110vw;
   height: 60vw;
   left: 16vw;
-  top: 36vw;
+  top: 31vw;
 }
 
 @media only screen and (min-width: 1024px) {
   .supervisor {
     background-size: 65%;
-    top: 38vw;
+    top: 34vw;
     left: 22vw;
   }
 }
