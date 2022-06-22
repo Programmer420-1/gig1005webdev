@@ -4,7 +4,7 @@ import tw, { styled } from 'twin.macro'
 
 function LeaderboardDropdown({ selected, setSelected }) {
     const [isActive, setIsActive] = useState(false)
-    const options = [ 'Angular', 'React', 'Vue']
+    const options = [ 'Digital Advocacy', 'Digital Opportunity', 'Digital Privacy', 'Digital Security']
 
     return (
         <div className='lbDropdown' onClick={() => { setIsActive(!isActive) }}>

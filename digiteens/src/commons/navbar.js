@@ -24,7 +24,7 @@ const NavBar = ({ isScrolled }) => {
                 <Logo />
                 <NavItem pageName="Home" />
                 <NavItem pageName="Event" />
-                {/* <NavItem pageName="Leaderboard" /> */}
+                <NavItem pageName="Leaderboard" />
                 <NavItem pageName="Gallery" />
                 <NavItem pageName="FAQ" />
                 <NavItem pageName="About us" />
