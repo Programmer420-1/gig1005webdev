@@ -415,18 +415,18 @@ const Landing = () => {
               <Fade left>
                 <AboutUsChat
                   delay={0.75}
-                  content="Who are us?"
+                  content="Who are we?"
                   isSender={true}
                 />
               </Fade>
               <Fade right>
                 <AboutUsChat
                   delay={0.75}
-                  content="We are a group of year 1 Universiti Malaya students who are trying to promote the digitisation of our society."
+                  content="We are a group of students from Universiti Malaya who are organizing a program in collaboration with Meta. The program will aim to educate the youth on fundamental information regarding the digital world. In this increasingly globalized world, the digital world is becoming less of an option and more of a necessity. Due to this, it is important that we have the knowledge necessary in navigating the digital world and we hope to contribute to that."
                   isSender={false}
                 />
               </Fade>
-              <Fade left>
+              {/* <Fade left>
                 <AboutUsChat
                   delay={1.25}
                   content="What is this event about?"
@@ -453,7 +453,7 @@ const Landing = () => {
                   content="This event is launched successfully  with the support from Meta and UM Stem Centre."
                   isSender={false}
                 />
-              </Fade>
+              </Fade> */}
             </div>
           </AboutUs>
         )}
@@ -464,7 +464,7 @@ const Landing = () => {
           <EventPopUp name="Registration" date="16/05/2022" index="1" />
           <EventPopUp name="Module 1" date="21/05/2022" index="2" />
           <EventPopUp name="Module 2" date="28/05/2022" index="3" />
-          <EventPopUp name="Module 3" date="04/05/2022" index="4" />
+          <EventPopUp name="Module 3" date="04/06/2022" index="4" />
           <EventPopUp name="Module 4" date="11/06/2022" index="5" />
           <EventPopUp name="Closing Ceremony" date="11/06/2022" index="6" />
         </TimelineDots>

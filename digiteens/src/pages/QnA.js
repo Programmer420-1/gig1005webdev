@@ -7,16 +7,20 @@ import { Container } from '@mui/material';
 import NavBar from '../commons/navbar';
 const data = [
     {
-        'Question': 'Question 1',
-        'Answer': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae malesuada sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur porta mollis tellus, a pharetra arcu. Cras finibus ac odio nec tempor. Phasellus accumsan eu magna quis porta. Sed varius nibh at magna consequat, eget feugiat sapien accumsan. In lorem purus, gravida ut ex ac, vehicula tempor mi. Nullam vel convallis sapien, eget congue nisi. Sed congue feugiat mauris, et faucibus libero ullamcorper sit amet. Sed faucibus nisi ipsum, id fringilla ligula accumsan at. Maecenas et nisi quis mauris elementum porttitor. Curabitur arcu sem, sollicitudin non arcu sed, semper sollicitudin sapien. Integer malesuada sapien nibh, id feugiat ipsum pellentesque at. Vestibulum pretium facilisis magna, et gravida enim convallis ac. In faucibus enim non enim efficitur, vel bibendum lectus vehicula.'
+        'Question': 'What is the venue of the program',
+        'Answer': 'The program will be held virtually via Microsoft Teams. The link will be sent to you upon registration. '
     },
     {
-        'Question': 'Question 2',
-        'Answer': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae malesuada sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur porta mollis tellus, a pharetra arcu. Cras finibus ac odio nec tempor. Phasellus accumsan eu magna quis porta. Sed varius nibh at magna consequat, eget feugiat sapien accumsan. In lorem purus, gravida ut ex ac, vehicula tempor mi. Nullam vel convallis sapien, eget congue nisi. Sed congue feugiat mauris, et faucibus libero ullamcorper sit amet. Sed faucibus nisi ipsum, id fringilla ligula accumsan at. Maecenas et nisi quis mauris elementum porttitor. Curabitur arcu sem, sollicitudin non arcu sed, semper sollicitudin sapien. Integer malesuada sapien nibh, id feugiat ipsum pellentesque at. Vestibulum pretium facilisis magna, et gravida enim convallis ac. In faucibus enim non enim efficitur, vel bibendum lectus vehicula.'
+        'Question': 'How many weeks will the program be running for?',
+        'Answer': 'The program will run in the form of 4 modules that will take place in 4 consecutive weeks starting on the 21st of May.'
     },
     {
-        'Question': 'Question 3',
-        'Answer': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae malesuada sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur porta mollis tellus, a pharetra arcu. Cras finibus ac odio nec tempor. Phasellus accumsan eu magna quis porta. Sed varius nibh at magna consequat, eget feugiat sapien accumsan. In lorem purus, gravida ut ex ac, vehicula tempor mi. Nullam vel convallis sapien, eget congue nisi. Sed congue feugiat mauris, et faucibus libero ullamcorper sit amet. Sed faucibus nisi ipsum, id fringilla ligula accumsan at. Maecenas et nisi quis mauris elementum porttitor. Curabitur arcu sem, sollicitudin non arcu sed, semper sollicitudin sapien. Integer malesuada sapien nibh, id feugiat ipsum pellentesque at. Vestibulum pretium facilisis magna, et gravida enim convallis ac. In faucibus enim non enim efficitur, vel bibendum lectus vehicula.'
+        'Question': 'If I miss 1 module, can I still participate in the others?',
+        'Answer': 'Yes, all modules will run independently of each other and will not require you to commit in totality.'
+    },
+    {
+        'Question': 'Is it only open to UM students or outsiders as well?',
+        'Answer': 'It is open to everyone regardless of whether you are a UM student or not.'
     }
 
 ]

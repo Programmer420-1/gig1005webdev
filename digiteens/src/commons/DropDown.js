@@ -8,7 +8,7 @@ const DropDown = () => {
       <NavItem pageName="Home" />
       <NavItem pageName="Event" />
       {/* <NavItem pageName="Leaderboard" /> */}
-      {/* <NavItem pageName="Gallery" /> */}
+      <NavItem pageName="Gallery" />
       <NavItem pageName="FAQ" />
       <NavItem pageName="About us" />
       <NavItem pageName="Department Photo" />

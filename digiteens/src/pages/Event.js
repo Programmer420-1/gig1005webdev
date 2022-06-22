@@ -51,11 +51,11 @@ const Event = () => {
         </div>
       </>
       <EventSection title="Modules" backgroundImg="" contentComp={Modules()} />
-      <EventSection
+      {/* <EventSection
         title="Tiktok Challenges"
         backgroundImg="testing.jpg"
         contentComp={Tiktok()}
-      />
+      /> */}
       <ScrollToTop isScrolled={isScrolled} onClick={scrollToTop} />
     </div>
   );

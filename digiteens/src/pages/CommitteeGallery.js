@@ -10,65 +10,59 @@ import ScrollToTop from '../landing/ScrollToTop'
 const data = [
   {
     key: 1,
-    src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Director",
+    src: "/assets/committee/Advisor.jpg",
+    departmentName: "Advisor",
   },
   {
     key: 2,
-    src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Co-director",
+    src: "/assets/committee/Executive.jpeg",
+    departmentName: "Executive",
   },
   {
     key: 3,
-    src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Secretary",
-  },
-  {
-    key: 4,
-    src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Treasurer",
-  },
-  {
-    key: 5,
-    src: "/assets/images/groupPhoto.jpg",
+    src: "/assets/committee/Publicity.png",
     departmentName: "Department of Publicity",
   },
   {
-    key: 6,
-    src: "/assets/images/groupPhoto.jpg",
+    key: 4,
+    src: "/assets/committee/Multimedia.png",
     departmentName: "Department of Multimedia",
   },
   {
+    key: 5,
+    src: "/assets/committee/DigitalAdvocacy.jpeg",
+    departmentName: "Module Devs - Digital Advocacy",
+  },
+  {
+    key: 6,
+    src: "/assets/committee/DigitalOpportunity.png",
+    departmentName: "Module Devs - Digital Opportunity",
+  },
+  {
     key: 7,
-    src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Department of Module Development",
+    src: "/assets/committee/DigitalPrivacy.png",
+    departmentName: "Module Devs - Digital Privacy",
   },
   {
     key: 8,
-    src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Mentors",
+    src: "/assets/committee/DigitalSecurity.jpeg",
+    departmentName: "Module Devs - Digital Security",
   },
   {
     key: 9,
-    src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Module 1: Digital Privacy",
+    src: "/assets/committee/Mentor-DigitalAdvocacy.jpeg",
+    departmentName: "Mentors - Digital Advocacy",
   },
   {
     key: 10,
-    src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Module 2: Digital Opportunity",
+    src: "/assets/committee/Mentor-DigitalOpportunity.jpg",
+    departmentName: "Mentors - Digital Opportunity",
   },
   {
     key: 11,
-    src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Module 3: Digital Security",
+    src: "/assets/committee/Mentor-DigitalSecurity.png",
+    departmentName: "Mentors - Digital Security",
   },
-  {
-    key: 12,
-    src: "/assets/images/groupPhoto.jpg",
-    departmentName: "Module 4: Digital Advocacy",
-  },
-
 ];
 
 const ImageCard = ({ imageSrc, departmentName, index }) => {
@@ -164,7 +158,7 @@ function CommitteeGallery() {
           })}
         </Gallery>
       </Container>
-    <ScrollToTop isScrolled={isScrolled} onClick={scrollToTop}/>
+      <ScrollToTop isScrolled={isScrolled} onClick={scrollToTop} />
       ;
     </Wrap>
   );
