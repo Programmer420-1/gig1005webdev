@@ -47,62 +47,68 @@ function Leaderboard() {
     <div style={{ backgroundColor: "black" }}>
       <Wrapper>
         <NavBar />
-        <p className="font-bold text-3xl text-center md:pt-16 pt-5 lg:pt-32">
+        <p className="font-bold text-3xl text-center md:pt-24 pt-5 lg:pt-32">
           Leaderboard
         </p>
-        <LeaderboardDropdown selected={selected} setSelected={setSelected} />
-        {selected === "Digital Opportunity" ? (
-          <Rows>
-            {data["Digital Opportunity"].map((val, idx) => {
-              return (
-                <div>
-                  <img
-                    key={idx}
-                    src={"/assets/winners/Digital Opportunity/" + val["url"]}
-                  />
-                  <p>{val["name"]}</p>
-                </div>
-              );
-            })}
-          </Rows>
-        ) : (
-          <div className="relative h-full mt-10">
-            <div className="grid md:grid-cols-3 grid-cols-1 mx-auto md:fixed inset-x-0 lg:bottom-2 bottom-24 px-3 lg:px-24">
-              <PodiumDiv className="md:order-2 md:relative md:bottom-36">
-                <PodiumImg bgImage={data[selected][0]["url"]}></PodiumImg>
-                <div
-                  className="md:py-5 py-3 md:mx-5 mx-28"
-                  style={{ backgroundColor: "#FFCB9B", color: "#106466" }}
-                >
-                  <PodiumText>Gold</PodiumText>
-                  <p>{data[selected][0]["name"]}</p>
-                </div>
-              </PodiumDiv>
+        <div className="h-full">
+          <LeaderboardDropdown
+            className="relative"
+            selected={selected}
+            setSelected={setSelected}
+          />
+          {selected === "Digital Opportunity" ? (
+            <Rows>
+              {data["Digital Opportunity"].map((val, idx) => {
+                return (
+                  <div>
+                    <img
+                      key={idx}
+                      src={"/assets/winners/Digital Opportunity/" + val["url"]}
+                    />
+                    <p>{val["name"]}</p>
+                  </div>
+                );
+              })}
+            </Rows>
+          ) : (
+            <div className="relative h-full mt-10">
+              <div className="grid md:grid-cols-3 grid-cols-1 mx-auto md:fixed inset-x-0 px-3 lg:px-24">
+                <PodiumDiv className="md:order-2 md:relative">
+                  <PodiumImg bgImage={data[selected][0]["url"]}></PodiumImg>
+                  <div
+                    className="md:py-5 py-3 md:mx-5 mx-28"
+                    style={{ backgroundColor: "#FFCB9B", color: "#106466" }}
+                  >
+                    <PodiumText>Gold</PodiumText>
+                    <p>{data[selected][0]["name"]}</p>
+                  </div>
+                </PodiumDiv>
 
-              <PodiumDiv className="md:order-1 md:relative md:bottom-24">
-                <PodiumImg bgImage={data[selected][1]["url"]}></PodiumImg>
-                <div
-                  className="md:py-5 py-3 md:mx-5 mx-28"
-                  style={{ backgroundColor: "#D2E9E3", color: "#106466" }}
-                >
-                  <PodiumText>Silver</PodiumText>
-                  <p>{data[selected][1]["name"]}</p>
-                </div>
-              </PodiumDiv>
+                <PodiumDiv className="md:order-1 md:relative md:top-8">
+                  <PodiumImg bgImage={data[selected][1]["url"]}></PodiumImg>
+                  <div
+                    className="md:py-5 py-3 md:mx-5 mx-28"
+                    style={{ backgroundColor: "#D2E9E3", color: "#106466" }}
+                  >
+                    <PodiumText>Silver</PodiumText>
+                    <p>{data[selected][1]["name"]}</p>
+                  </div>
+                </PodiumDiv>
 
-              <PodiumDiv className="md:order-3 md:relative md:bottom-24">
-                <PodiumImg bgImage={data[selected][2]["url"]}></PodiumImg>
-                <div
-                  className="md:py-5 py-3 md:mx-5 mx-28 "
-                  style={{ backgroundColor: "#D2E9E3", color: "#106466" }}
-                >
-                  <PodiumText>Bronze</PodiumText>
-                  <p>{data[selected][2]["name"]}</p>
-                </div>
-              </PodiumDiv>
+                <PodiumDiv className="md:order-3 md:relative md:top-8">
+                  <PodiumImg bgImage={data[selected][2]["url"]}></PodiumImg>
+                  <div
+                    className="md:py-5 py-3 md:mx-5 mx-28 "
+                    style={{ backgroundColor: "#D2E9E3", color: "#106466" }}
+                  >
+                    <PodiumText>Bronze</PodiumText>
+                    <p>{data[selected][2]["name"]}</p>
+                  </div>
+                </PodiumDiv>
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </Wrapper>
     </div>
   );
@@ -154,9 +160,9 @@ const Rows = styled.div`
     margin: 30px 30px;
   }
 
-  p{
+  p {
     margin-top: 20px;
-    background-color: #FFCB9B;
+    background-color: #ffcb9b;
     color: #106466;
     padding: 15px;
     text-align: center;
@@ -168,7 +174,6 @@ const Rows = styled.div`
   @media (max-width: 961px) {
     margin: 50px 10px;
   }
-
 `;
 
 export default Leaderboard;
